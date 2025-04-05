@@ -12,45 +12,63 @@
         keymap {
                 compatible = "zmk,keymap";
 
-                default_layer {
+                base_layer { //layer 0
+                        display_name = "Base";
 // -----------------------------------------------------------------------------------------
 // |  ESC |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | DEL  |
-// |  TAB |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-// |  ALT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-//                    | CTL | LWR |LSHFT|   | SPC | ENT  | GUI |
+// |CTL/TB|  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
+// |  ALT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  |ALTENT|
+//                    | L3  |L1/BS|LSHFT|   | SPC |L2/ENT| GUI |
                         bindings = <
-   &kp ESC   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
-   &kp TAB   &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-   &kp LALT  &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
-               &kp LCTRL &mo 1 &kp LSHFT     &kp SPACE    &mo 2     &kp LGUI
+   &kp ESC     &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp DEL
+   &mt CTL TAB &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
+   &kp LALT    &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp LA(ENT)
+               &mo 3 &lt 1 BSPC  &kp LSHFT     &kp SPACE    &lt 2 ENT &kp LGUI
                         >;
                 };
-                lower_layer {
+                number_layer { //layer 1
+                        display_name = "Numb";
 // -----------------------------------------------------------------------------------------
 // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  *  |  7  |  8  |  9  |  /  | BSPC |
 // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   |  +  |  4  |  5  |  6  |  -  | CALC |
 // | SHFT |     |     |     |     |     |   |  $  |  1  |  2  |  3  |  .  |  ,   |
 //                    | GUI |     | SPC |   |     |  =  |  0  |
                         bindings = <
-   &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp ASTRK &kp N7   &kp N8 &kp N9    &kp FSLH  &kp BSPC
-   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp PLUS  &kp N4   &kp N5 &kp N6    &kp MINUS &trans
-   &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &kp DLLR  &kp N1   &kp N2 &kp N3    &kp DOT   &kp COMMA
-                                        &kp LGUI     &trans       &kp LSHFT      &kp SPACE &kp RET  &kp N0  
+   &trans  &kp N1      &kp UP      &kp LG(E)   &kp LG(R)     &kp LG(T)       &kp ASTRK &kp N7   &kp N8 &kp N9    &kp FSLH  &trans
+   &trans  &kp LEFT    &kp DOWN    &kp RIGHT   &kp LS(LC(F)) &kp LS(LC(Y))   &kp PLUS  &kp N4   &kp N5 &kp N6    &kp MINUS &kp C_AL_CALC
+   &trans  &kp LG(TAB) &kp LS(TAB) &kp ENT     &kp LS(LG(S)) &kp CAPS        &kp DLLR  &kp N1   &kp N2 &kp N3    &kp DOT   &kp COMMA
+                                   &trans      &trans        &trans          &kp SPACE &kp RET  &kp N0  
                         >;
                 };
 
-                raise_layer {
+                symbol_layer { //layer 2
+                        display_name = "Symb";
 // -----------------------------------------------------------------------------------------
-// |   ~  |  !  |  @  |  #  |  $  |  %  |   |     | F7  | F8  | F9  | F13 | BT1  |
-// |   [  |  {  |  (  |  )  |  }  |  ]  |   |     | F4  | F5  | F6  | F12 | BT2  |
-// |   |  |  ^  |  &  |  *  |  `  |  \  |   |     | F1  | F2  | F3  | F11 | BTCLR|
+// |   ~  |  !  |  @  |  #  |  $  |  %  |   |MENU | F7  | F8  | F9  | F13 | BT1  |
+// |   [  |  {  |  (  |  )  |  }  |  ]  |   |SLCK | F4  | F5  | F6  | F12 | BT2  |
+// |   |  |  ^  |  &  |  *  |  `  |  \  |   |     | F1  | F2  | F3  | F11 | GAME |
 //                    |  _  |  -  |  =  |   |     |     | F10 |
                         bindings = <
-   &kp  TAB  &kp EXCL  &kp AT   &kp HASH  &kp DLLR  &kp PRCNT   &kp CARET &kp AMPS  &kp ASTRK &kp LPAR &kp RPAR &kp BSPC
-   &kp LBKT  &kp LBRC  &kp LPAR &kp RPAR  &kp RBRC  &kp RBKT    &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT &kp BSLH &kp GRAVE
-   &kp PIPE  &kp CARET &kp AMPS &kp ASTRK &kp TILDE &kp BSLH    &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &kp PIPE &kp TILDE
-                                &kp UNDER &kp MINUS &kp EQUAL   &kp RET   &trans    &kp RALT
+   &kp TILDE &kp EXCL  &kp AT   &kp HASH  &kp DLLR  &kp PRCNT   &kp K_APP &kp F7  &kp F8  &kp F9  &kp F13  &bt BT_SEL 0
+   &kp LBKT  &kp LBRC  &kp LPAR &kp RPAR  &kp RBRC  &kp RBKT    &kp SLCK  &kp F4  &kp F5  &kp F6  &kp F12  &bt BT_SEL 1
+   &kp PIPE  &kp CARET &kp AMPS &kp ASTRK &kp GRAVE &kp BSLH    &kp UNDER &kp F1  &kp F2  &kp F3  &kp F11  &to 3
+                                &kp UNDER &kp MINUS &kp EQUAL   &kp RET   &trans  &kp F10
                         >;
                 };
+
+                gaming_layer { //layer 3
+                        display_name = "Game";
+// -----------------------------------------------------------------------------------------
+// | TAB  |     |     |     |     |     |   |HOME |PG DN|PG UP| END |     |      |
+// | SHIFT|     |     |     |     |     |   |LEFT |DOWN | UP  |RIGHT|     |      |
+// | CTL  |     |     |     |     |     |   |PREV |VOL -|VOL +|NEXT |     | BASE |
+//                    | ESC |BSPC | SPC |   |PLAY |MUTE |STOP |
+                        bindings = <
+   &kp TAB   &trans  &trans  &trans  &trans  &trans     &kp HOME   &kp PG_DN    &kp PG_UP    &kp END    &trans  &trans
+   &kp LSHFT &trans  &trans  &trans  &trans  &trans     &kp LEFT   &kp DOWN     &kp UP       &kp RIGHT  &trans  &trans
+   &kp CTL   &trans  &trans  &trans  &trans  &trans     &kp K_PREV &kp K_VOL_DN &kp K_VOL_UP &kp K_NEXT &trans  &to 0
+                        &kp ESC &kp BSPC &kp SPACE      &kp PP     &kp K_MUTE   &kp K_STOP
+                        >;
+                {;
         };
 };
