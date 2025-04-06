@@ -30,14 +30,14 @@
                 number_layer { //layer 1
                         display_name = "Numb";
 // -----------------------------------------------------------------------------------------
-// |  TAB |  1  |  2  |  3  |  4  |  5  |   |  *  |  7  |  8  |  9  |  /  | BSPC |
-// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   |  +  |  4  |  5  |  6  |  -  | CALC |
-// | SHFT |     |     |     |     |     |   |  $  |  1  |  2  |  3  |  .  |  ,   |
-//                    | GUI |     | SPC |   |     |  =  |  0  |
+// |      |ALT+q| UP  |GUI+E|GUI+R|GUI+T|   |  *  |  7  |  8  |  9  |  /  | BSPC |
+// |      |LEFT |DOWN |RIGHT|S+C+f|S+C+y|   |  +  |  4  |  5  |  6  |  -  | CALC |
+// |      |G+TAB|S+TAB| ENT |S+G+s|CAPS |   |  $  |  1  |  2  |  3  |  .  |  ,   |
+//                    |     |     |     |   |     |  =  |  0  |
                         bindings = <
-   &trans  &kp N1      &kp UP      &kp LG(E)   &kp LG(R)     &kp LG(T)       &kp ASTRK &kp N7  &kp N8  &kp N9  &kp FSLH  &trans
+   &trans  &kp LA(Q)   &kp UP      &kp LG(E)   &kp LG(R)     &kp LG(T)       &kp ASTRK &kp N7  &kp N8  &kp N9  &kp FSLH  &trans
    &trans  &kp LEFT    &kp DOWN    &kp RIGHT   &kp LS(LC(F)) &kp LS(LC(Y))   &kp PLUS  &kp N4  &kp N5  &kp N6  &kp MINUS &kp C_AL_CALC
-   &trans  &kp LG(TAB) &kp LS(TAB) &kp ENT     &kp LS(LG(S)) &kp CAPS        &kp DLLR  &kp N1  &kp N2  &kp N3  &kp DOT   &kp COMMA
+   &trans  &kp LG(TAB) &kp LS(TAB) &kp RET     &kp LS(LG(S)) &kp CAPS        &kp DLLR  &kp N1  &kp N2  &kp N3  &kp DOT   &kp COMMA
                                    &trans      &trans        &trans          &kp SPACE &kp RET &kp N0
                         >;
                 };
