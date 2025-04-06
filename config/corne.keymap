@@ -14,7 +14,7 @@
                 compatible = "zmk,keymap";
 
                 base_layer { //layer 0
-                        display_name = "Base";
+                        display-name = "Base";
 // -----------------------------------------------------------------------------------------
 // |  ESC |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | DEL  |
 // |CTL/TB|  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
@@ -29,7 +29,7 @@
                 };
 
                 number_layer { //layer 1
-                        display_name = "Numb";
+                        display-name = "Numb";
 // -----------------------------------------------------------------------------------------
 // |      |ALT+q| UP  |GUI+E|GUI+R|GUI+T|   |  *  |  7  |  8  |  9  |  /  | BSPC |
 // |      |LEFT |DOWN |RIGHT|S+C+f|S+C+y|   |  +  |  4  |  5  |  6  |  -  | CALC |
@@ -44,7 +44,7 @@
                 };
 
                 symbol_layer { //layer 2
-                        display_name = "Symb";
+                        display-name = "Symb";
 // -----------------------------------------------------------------------------------------
 // |   ~  |  !  |  @  |  #  |  $  |  %  |   |MENU | F7  | F8  | F9  | F13 | GAME |
 // |   [  |  {  |  (  |  )  |  }  |  ]  |   |SLCK | F4  | F5  | F6  | F12 | BT1  |
@@ -59,7 +59,7 @@
                 };
 
                 gaming_layer { //layer 3
-                        display_name = "Game";
+                        display-name = "Game";
 // -----------------------------------------------------------------------------------------
 // | TAB  |     |     |     |     |     |   |HOME |PG DN|PG UP| END | INS  | BASE |
 // | SHIFT|     |     |     |     |     |   |LEFT |DOWN | UP  |RIGHT|SCR LK|NUM LK|
