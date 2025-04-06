@@ -67,7 +67,7 @@
 //                    | ESC |BSPC | SPC |   |PLAY |MUTE |STOP |
                         bindings = <
    &kp TAB   &trans  &trans  &trans  &trans  &trans     &kp HOME   &kp PG_DN    &kp PG_UP    &kp END    &kp INS     &to 0
-   &kp LSHFT &trans  &trans  &trans  &trans  &trans     &kp LEFT   &kp DOWN     &kp UP       &kp RIGHT  &kp SLCK    &kp NLCK
+   &kp LSHFT &trans  &trans  &trans  &trans  &trans     &kp LEFT   &kp DOWN     &kp UP       &kp RIGHT  &kp SLCK    &kp LNLCK
    &kp LCTRL &trans  &trans  &trans  &trans  &trans     &kp K_PREV &kp K_VOL_DN &kp K_VOL_UP &kp K_NEXT &kp K_EJECT &kp RET
                              &kp ESC &kp BSPC&kp SPACE  &kp PP     &kp K_MUTE   &kp K_STOP
                         >;
