@@ -46,29 +46,29 @@
                 symbol_layer { //layer 2
                         display_name = "Symb";
 // -----------------------------------------------------------------------------------------
-// |   ~  |  !  |  @  |  #  |  $  |  %  |   |MENU | F7  | F8  | F9  | F13 | BT1  |
-// |   [  |  {  |  (  |  )  |  }  |  ]  |   |SLCK | F4  | F5  | F6  | F12 | BT2  |
-// |   |  |  ^  |  &  |  *  |  `  |  \  |   |     | F1  | F2  | F3  | F11 | GAME |
+// |   ~  |  !  |  @  |  #  |  $  |  %  |   |MENU | F7  | F8  | F9  | F13 | GAME |
+// |   [  |  {  |  (  |  )  |  }  |  ]  |   |SLCK | F4  | F5  | F6  | F12 | BT1  |
+// |   |  |  ^  |  &  |  *  |  `  |  \  |   |BT CL| F1  | F2  | F3  | F11 | BT2  |
 //                    |  _  |  -  |  =  |   |     |     | F10 |
                         bindings = <
-   &kp TILDE &kp EXCL  &kp AT   &kp HASH  &kp DLLR  &kp PRCNT   &kp K_APP &kp F7  &kp F8  &kp F9  &kp F13  &bt BT_SEL 0
-   &kp LBKT  &kp LBRC  &kp LPAR &kp RPAR  &kp RBRC  &kp RBKT    &kp SLCK  &kp F4  &kp F5  &kp F6  &kp F12  &bt BT_SEL 1
-   &kp PIPE  &kp CARET &kp AMPS &kp ASTRK &kp GRAVE &kp BSLH    &kp UNDER &kp F1  &kp F2  &kp F3  &kp F11  &to 3
-                                &kp UNDER &kp MINUS &kp EQUAL   &trans    &trans  &kp F10
+   &kp TILDE &kp EXCL  &kp AT   &kp HASH  &kp DLLR  &kp PRCNT   &kp K_APP  &kp F7  &kp F8  &kp F9  &kp F13  &to 3
+   &kp LBKT  &kp LBRC  &kp LPAR &kp RPAR  &kp RBRC  &kp RBKT    &kp SLCK   &kp F4  &kp F5  &kp F6  &kp F12  &bt BT_SEL 0
+   &kp PIPE  &kp CARET &kp AMPS &kp ASTRK &kp GRAVE &kp BSLH    &bt BT_CLR &kp F1  &kp F2  &kp F3  &kp F11  &bt BT_SEL 1
+                                &kp UNDER &kp MINUS &kp EQUAL   &trans     &trans  &kp F10
                         >;
                 };
 
                 gaming_layer { //layer 3
                         display_name = "Game";
 // -----------------------------------------------------------------------------------------
-// | TAB  |     |     |     |     |     |   |HOME |PG DN|PG UP| END |     |      |
-// | SHIFT|     |     |     |     |     |   |LEFT |DOWN | UP  |RIGHT|     |      |
-// | CTL  |     |     |     |     |     |   |PREV |VOL -|VOL +|NEXT |     | BASE |
+// | TAB  |     |     |     |     |     |   |HOME |PG DN|PG UP| END | INS  | BASE |
+// | SHIFT|     |     |     |     |     |   |LEFT |DOWN | UP  |RIGHT|SCR LK|NUM LK|
+// | CTL  |     |     |     |     |     |   |PREV |VOL- |VOL+ |NEXT |EJECT |  ENT |
 //                    | ESC |BSPC | SPC |   |PLAY |MUTE |STOP |
                         bindings = <
-   &kp TAB   &trans  &trans  &trans  &trans  &trans     &kp HOME   &kp PG_DN    &kp PG_UP    &kp END    &trans  &trans
-   &kp LSHFT &trans  &trans  &trans  &trans  &trans     &kp LEFT   &kp DOWN     &kp UP       &kp RIGHT  &trans  &trans
-   &kp CTL   &trans  &trans  &trans  &trans  &trans     &kp K_PREV &kp K_VOL_DN &kp K_VOL_UP &kp K_NEXT &trans  &to 0
+   &kp TAB   &trans  &trans  &trans  &trans  &trans     &kp HOME   &kp PG_DN    &kp PG_UP    &kp END    &kp INS     &to 0
+   &kp LSHFT &trans  &trans  &trans  &trans  &trans     &kp LEFT   &kp DOWN     &kp UP       &kp RIGHT  &kp SLCK    &kp NLCK
+   &kp LCTRL &trans  &trans  &trans  &trans  &trans     &kp K_PREV &kp K_VOL_DN &kp K_VOL_UP &kp K_NEXT &kp K_EJECT &kp RET
                         &kp ESC &kp BSPC &kp SPACE      &kp PP     &kp K_MUTE   &kp K_STOP
                         >;
                 };
