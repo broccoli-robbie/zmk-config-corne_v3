@@ -17,10 +17,10 @@
             display-name = "Base";
 
             // -----------------------------------------------------------------------------------------
-            // |  ESC |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | DEL  |
-            // |CTL/TB|  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-            // |  ALT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  |ALTENT|
-            //                    | L3  |L1/BS|LSHFT|   | SPC |L2/ENT| GUI |
+            // |  ESC  |  Q  |  W  |  E  |   R   |  T  |   |  Y  |   U   |  I  |  O  |  P  |DELETE |
+            // |CTL/TAB|  A  |  S  |  D  |   F   |  G  |   |  H  |   J   |  K  |  L  |  ;  |   '   |
+            // |  ALT  |  Z  |  X  |  C  |   V   |  B  |   |  N  |   M   |  ,  |  .  |  /  |ALT+ENT|
+            //               |L3/ALT+TAB)|L1/BACK|SHIFT|   |SPACE|L2/ENT | GUI |
 
             bindings = <
 &kp ESC        &kp Q  &kp W  &kp E          &kp R       &kp T        &kp Y      &kp U      &kp I      &kp O    &kp P     &kp DEL
@@ -34,7 +34,7 @@
             display-name = "Number";
 
             // -----------------------------------------------------------------------------------------
-            // |      |ALT+q| UP  |GUI+E|GUI+R|GUI+T|   |  *  |  7  |  8  |  9  |  /  | BSPC |
+            // |      | A+q | UP  | G+e | G+r | G+t |   |  *  |  7  |  8  |  9  |  /  | BACK |
             // |      |LEFT |DOWN |RIGHT|S+C+f|S+C+y|   |  +  |  4  |  5  |  6  |  -  | CALC |
             // |      |G+TAB|S+TAB| ENT |S+G+s|CAPS |   |  $  |  1  |  2  |  3  |  .  |  ,   |
             //                    |     |     |     |   |     |  =  |  0  |
@@ -43,7 +43,7 @@
 &trans  &kp LA(Q)    &kp UP       &kp LG(E)  &kp LG(R)      &kp LG(T)        &kp ASTRK  &kp N7   &kp N8  &kp N9  &kp FSLH   &trans
 &trans  &kp LEFT     &kp DOWN     &kp RIGHT  &kp LS(LC(F))  &kp LS(LC(Y))    &kp PLUS   &kp N4   &kp N5  &kp N6  &kp MINUS  &kp C_AL_CALC
 &trans  &kp LG(TAB)  &kp LS(TAB)  &kp RET    &kp LS(LG(S))  &kp CAPS         &kp DLLR   &kp N1   &kp N2  &kp N3  &kp DOT    &kp COMMA
-                                  &trans     &trans         &trans           &kp SPACE  &kp RET  &kp N0
+                                  &trans     &trans         &trans           &trans     &kp RET  &kp N0
             >;
         };
 
@@ -51,9 +51,9 @@
             display-name = "Symbol";
 
             // -----------------------------------------------------------------------------------------
-            // |   ~  |  !  |  @  |  #  |  $  |  %  |   |MENU | F7  | F8  | F9  | F13 | GAME |
-            // |   [  |  {  |  (  |  )  |  }  |  ]  |   |SLCK | F4  | F5  | F6  | F12 | BT1  |
-            // |   |  |  ^  |  &  |  *  |  `  |  \  |   |BT CL| F1  | F2  | F3  | F11 | BT2  |
+            // |   ~  |  !  |  @  |  #  |  $  |  %  |   |MENU | F7  | F8  | F9  | F13 |  L3  |
+            // |   [  |  {  |  (  |  )  |  }  |  ]  |   |  +  | F4  | F5  | F6  | F12 | BT1  |
+            // |   |  |  ^  |  &  |  *  |  `  |  \  |   |SLCK | F1  | F2  | F3  | F11 | BT2  |
             //                    |  _  |  -  |  =  |   |     |     | F10 |
 
             bindings = <
@@ -68,16 +68,16 @@
             display-name = "Game";
 
             // -----------------------------------------------------------------------------------------
-            // | TAB  |     |     |     |     |     |   |HOME |PG DN|PG UP| END | INS  | BASE |
-            // | SHIFT|     |     |     |     |     |   |LEFT |DOWN | UP  |RIGHT|SCR LK|NUM LK|
+            // | TAB  |     |     |     |     |     |   |HOME |PG DN|PG UP| END | INS  |  L1  |
+            // | SHIFT|     |     |     |     |     |   |LEFT |DOWN | UP  |RIGHT|SELECT|NUM LK|
             // | CTL  |     |     |     |     |     |   |PREV |VOL- |VOL+ |NEXT |EJECT |  ENT |
-            //                    | ESC |BSPC | SPC |   |PLAY |MUTE |STOP |
+            //                    | ENT | ESC |SPACE|   |PLAY |MUTE |STOP |
 
             bindings = <
 &kp TAB    &trans  &trans  &trans   &trans    &trans       &kp HOME    &kp PG_DN     &kp PG_UP     &kp END     &kp INS       &to 0
 &kp LSHFT  &trans  &trans  &trans   &trans    &trans       &kp LEFT    &kp DOWN      &kp UP        &kp RIGHT   &kp K_SELECT  &kp LNLCK
 &kp LCTRL  &trans  &trans  &trans   &trans    &trans       &kp K_PREV  &kp K_VOL_DN  &kp K_VOL_UP  &kp K_NEXT  &kp K_EJECT   &kp RET
-                           &kp ESC  &kp BSPC  &kp SPACE    &kp K_PP    &kp K_MUTE    &kp K_STOP
+                           &kp RET  &kp ESC   &kp SPACE    &kp K_PP    &kp K_MUTE    &kp K_STOP
             >;
         };
     };
