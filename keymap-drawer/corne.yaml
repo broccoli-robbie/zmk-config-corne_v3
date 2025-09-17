@@ -46,7 +46,7 @@ layers:
   Number:
   - {t: ▽, type: trans}
   - Alt+Q
-  - ↑
+  - Alt+W
   - Gui+E
   - Gui+R
   - Gui+T
@@ -57,9 +57,9 @@ layers:
   - /
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ←
-  - ↓
-  - →
+  - Gui+Ctrl
+  - Gui+Shift
+  - Gui+Sft+Alt
   - Sft+Ctl+F
   - Sft+Ctl+Y
   - +
