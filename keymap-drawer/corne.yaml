@@ -12,7 +12,7 @@ layers:
   - I
   - O
   - P
-  - KP MINUS
+  - Page Up
   - Esc
   - A
   - {t: S, h: LEFT GUI}
@@ -25,7 +25,7 @@ layers:
   - {t: L, h: LEFT GUI}
   - ;
   - ''''
-  - Game/Nav
+  - ↹
   - Z
   - X
   - C
@@ -36,13 +36,13 @@ layers:
   - ','
   - .
   - /
-  - _
+  - Page Down
   - {t: ⌦, h: Game/Nav}
   - {t: '$$mdi:backspace-outline$$', h: Number}
   - $$mdi:apple-keyboard-shift$$
   - ␣
   - {t: ⏎, h: Symbol}
-  - ↹
+  - '-'
   Number:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -154,7 +154,7 @@ layers:
   - →
   - SELECT
   - LNLCK
-  - {t: '$$mdi:apple-keyboard-control$$', type: held}
+  - $$mdi:apple-keyboard-control$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -166,7 +166,7 @@ layers:
   - NEXT
   - EJECT
   - ⏎
-  - ⏎
+  - {t: ⏎, type: held}
   - Esc
   - ␣
   - PP
