@@ -85,10 +85,10 @@
             //                    |     |     |     |   |     |  =  |  0  |
 
             bindings = <
-&trans   &trans       &trans         &trans         &trans         &trans    &kp ASTRK  &kp N7     &kp N8  &kp N9  &kp FSLH   &kp BSPC
-&kp TAB  &trans       &kp LG(LS(S))  &kp LS(LC(Y))  &kp LS(LC(F))  &trans    &kp PLUS   &kp N4     &kp N5  &kp N6  &kp MINUS  &kp C_AL_CALC
-&trans   &kp LG(TAB)  &kp LS(TAB)    &kp RET        &trans         &trans    &kp DLLR   &kp N1     &kp N2  &kp N3  &kp DOT    &kp COMMA
-                                     &trans         &trans         &trans    &trans     &kp EQUAL  &kp N0
+&trans  &trans       &trans        &trans        &trans         &trans           &kp ASTRK  &kp N7     &kp N8  &kp N9  &kp FSLH   &kp BSPC
+&trans  &trans       &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL      &kp LS(LC(F))    &kp PLUS   &kp N4     &kp N5  &kp N6  &kp MINUS  &kp C_AL_CALC
+&trans  &kp LG(TAB)  &kp LS(TAB)   &kp RET       &kp LS(LG(S))  &kp LS(LC(Y))    &kp DLLR   &kp N1     &kp N2  &kp N3  &kp DOT    &kp COMMA
+                                   &trans        &trans         &trans           &trans     &kp EQUAL  &kp N0
             >;
         };
 
