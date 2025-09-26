@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: corne}
 layers:
   Base:
-  - Esc
+  - Caps Lock
   - Q
   - W
   - E
@@ -12,20 +12,20 @@ layers:
   - I
   - O
   - P
-  - ⌦
-  - {t: ↹, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: A, h: LEFT GUI}
-  - {t: S, h: LEFT ALT}
-  - {t: D, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: F, h: LEFT SHIFT}
+  - KP MINUS
+  - Esc
+  - A
+  - {t: S, h: LEFT GUI}
+  - {t: D, h: LEFT ALT}
+  - {t: F, h: '$$mdi:apple-keyboard-control$$'}
   - G
   - H
-  - {t: J, h: RIGHT SHIFT}
-  - {t: K, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: L, h: LEFT ALT}
-  - {t: ;, h: LEFT GUI}
+  - {t: J, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: K, h: RIGHT ALT}
+  - {t: L, h: LEFT GUI}
+  - ;
   - ''''
-  - $$mdi:apple-keyboard-option$$
+  - Game/Nav
   - Z
   - X
   - C
@@ -36,32 +36,32 @@ layers:
   - ','
   - .
   - /
-  - Alt+⏎
-  - {t: Win Prev, h: Game/Nav}
+  - _
+  - {t: ⌦, h: Game/Nav}
   - {t: '$$mdi:backspace-outline$$', h: Number}
   - $$mdi:apple-keyboard-shift$$
   - ␣
   - {t: ⏎, h: Symbol}
-  - $$mdi:apple-keyboard-command$$
+  - ↹
   Number:
   - {t: ▽, type: trans}
-  - Alt+Q
-  - Alt+W
-  - Gui+E
-  - Gui+R
-  - Gui+T
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - '*'
   - '7'
   - '8'
   - '9'
   - /
+  - $$mdi:backspace-outline$$
+  - ↹
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Gui+Ctrl
-  - Gui+Shift
-  - Gui+Sft+Alt
-  - Sft+Ctl+F
+  - Gui+Sft+S
   - Sft+Ctl+Y
+  - Sft+Ctl+F
+  - {t: ▽, type: trans}
   - +
   - '4'
   - '5'
@@ -72,8 +72,8 @@ layers:
   - Gui+↹
   - Win Prev
   - ⏎
-  - Sft+Gui+S
-  - Caps Lock
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - $
   - '1'
   - '2'
@@ -111,11 +111,11 @@ layers:
   - F6
   - F11
   - BT 1
-  - '|'
+  - '`'
   - ^
   - AMPS
   - '*'
-  - '`'
+  - '|'
   - \
   - SCROLLLOCK
   - F1
@@ -123,9 +123,9 @@ layers:
   - F3
   - F10
   - BT 2
-  - _
-  - '-'
   - '='
+  - '-'
+  - _
   - APP
   - {type: held}
   - {t: ▽, type: trans}
@@ -144,9 +144,9 @@ layers:
   - {t: Base, h: toggle}
   - $$mdi:apple-keyboard-shift$$
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - S
+  - D
+  - F
   - {t: ▽, type: trans}
   - ←
   - ↓
@@ -154,7 +154,7 @@ layers:
   - →
   - SELECT
   - LNLCK
-  - $$mdi:apple-keyboard-control$$
+  - {t: '$$mdi:apple-keyboard-control$$', type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -166,7 +166,7 @@ layers:
   - NEXT
   - EJECT
   - ⏎
-  - {t: ⏎, type: held}
+  - ⏎
   - Esc
   - ␣
   - PP

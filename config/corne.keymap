@@ -68,10 +68,10 @@
             //               |L3/ALT+TAB)|L1/BACK|SHIFT|   |SPACE|L2/ENT | GUI |
 
             bindings = <
-&kp ESC        &kp Q            &kp W            &kp E          &kp R              &kp T        &kp Y      &kp U               &kp I         &kp O            &kp P               &kp DEL
-&mt LCTRL TAB  &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LCTRL D   &hml LEFT_SHIFT F  &kp G        &kp H      &hmr RIGHT_SHIFT J  &hmr LCTRL K  &hmr LEFT_ALT L  &hmr LEFT_GUI SEMI  &kp SQT
-&kp LALT       &kp Z            &kp X            &kp C          &kp V              &kp B        &kp N      &kp M               &kp COMMA     &kp DOT          &kp FSLH            &kp LA(RET)
-                                                 &lt 3 LS(TAB)  &my_lt 1 BSPC      &kp LSHFT    &kp SPACE  &my_lt 2 RET        &kp LGUI
+&kp CAPS  &kp Q  &kp W            &kp E            &kp R          &kp T        &kp Y      &kp U         &kp I             &kp O            &kp P     &kp KP_MINUS
+&kp ESC   &kp A  &hml LEFT_GUI S  &hml LEFT_ALT D  &hml LCTRL F   &kp G        &kp H      &hmr RCTRL J  &hmr RIGHT_ALT K  &hmr LEFT_GUI L  &kp SEMI  &kp SQT
+&mo 3     &kp Z  &kp X            &kp C            &kp V          &kp B        &kp N      &kp M         &kp COMMA         &kp DOT          &kp FSLH  &kp UNDER
+                                  &lt 3 DEL        &my_lt 1 BSPC  &kp LSHFT    &kp SPACE  &my_lt 2 RET  &kp TAB
             >;
         };
 
@@ -85,10 +85,10 @@
             //                    |     |     |     |   |     |  =  |  0  |
 
             bindings = <
-&trans  &kp LA(Q)      &kp LA(W)      &kp LG(E)         &kp LG(R)      &kp LG(T)        &kp ASTRK  &kp N7     &kp N8  &kp N9  &kp FSLH   &trans
-&trans  &kp LG(LCTRL)  &kp LG(LSHFT)  &kp LG(LS(LALT))  &kp LS(LC(F))  &kp LS(LC(Y))    &kp PLUS   &kp N4     &kp N5  &kp N6  &kp MINUS  &kp C_AL_CALC
-&trans  &kp LG(TAB)    &kp LS(TAB)    &kp RET           &kp LS(LG(S))  &kp CAPS         &kp DLLR   &kp N1     &kp N2  &kp N3  &kp DOT    &kp COMMA
-                                      &trans            &trans         &trans           &trans     &kp EQUAL  &kp N0
+&trans   &trans       &trans         &trans         &trans         &trans    &kp ASTRK  &kp N7     &kp N8  &kp N9  &kp FSLH   &kp BSPC
+&kp TAB  &trans       &kp LG(LS(S))  &kp LS(LC(Y))  &kp LS(LC(F))  &trans    &kp PLUS   &kp N4     &kp N5  &kp N6  &kp MINUS  &kp C_AL_CALC
+&trans   &kp LG(TAB)  &kp LS(TAB)    &kp RET        &trans         &trans    &kp DLLR   &kp N1     &kp N2  &kp N3  &kp DOT    &kp COMMA
+                                     &trans         &trans         &trans    &trans     &kp EQUAL  &kp N0
             >;
         };
 
@@ -104,8 +104,8 @@
             bindings = <
 &kp TILDE  &kp EXCL   &kp AT    &kp HASH   &kp DLLR   &kp PRCNT    &bt BT_CLR      &kp F7  &kp F8  &kp F9  &kp F12  &to 3
 &kp LBKT   &kp LBRC   &kp LPAR  &kp RPAR   &kp RBRC   &kp RBKT     &kp PLUS        &kp F4  &kp F5  &kp F6  &kp F11  &bt BT_SEL 0
-&kp PIPE   &kp CARET  &kp AMPS  &kp ASTRK  &kp GRAVE  &kp BSLH     &kp SCROLLLOCK  &kp F1  &kp F2  &kp F3  &kp F10  &bt BT_SEL 1
-                                &kp UNDER  &kp MINUS  &kp EQUAL    &kp K_APP       &trans  &trans
+&kp GRAVE  &kp CARET  &kp AMPS  &kp ASTRK  &kp PIPE   &kp BSLH     &kp SCROLLLOCK  &kp F1  &kp F2  &kp F3  &kp F10  &bt BT_SEL 1
+                                &kp EQUAL  &kp MINUS  &kp UNDER    &kp K_APP       &trans  &trans
             >;
         };
 
@@ -120,7 +120,7 @@
 
             bindings = <
 &kp TAB    &trans  &trans  &trans   &trans   &trans       &kp HOME    &kp PG_DN     &kp PG_UP     &kp END     &kp INS       &to 0
-&kp LSHFT  &trans  &trans  &trans   &trans   &trans       &kp LEFT    &kp DOWN      &kp UP        &kp RIGHT   &kp K_SELECT  &kp LNLCK
+&kp LSHFT  &trans  &kp S   &kp D    &kp F    &trans       &kp LEFT    &kp DOWN      &kp UP        &kp RIGHT   &kp K_SELECT  &kp LNLCK
 &kp LCTRL  &trans  &trans  &trans   &trans   &trans       &kp K_PREV  &kp K_VOL_DN  &kp K_VOL_UP  &kp K_NEXT  &kp K_EJECT   &kp RET
                            &kp RET  &kp ESC  &kp SPACE    &kp K_PP    &kp K_MUTE    &kp K_STOP
             >;
