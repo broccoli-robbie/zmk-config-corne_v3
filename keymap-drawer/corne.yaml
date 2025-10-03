@@ -58,10 +58,10 @@ layers:
   - $$mdi:backspace-outline$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LEFT GUI
-  - LEFT ALT
   - $$mdi:apple-keyboard-control$$
-  - Sft+Ctl+F
+  - LEFT ALT
+  - LEFT GUI
+  - Sft+Ctl+Y
   - +
   - '4'
   - '5'
@@ -73,7 +73,7 @@ layers:
   - Win Prev
   - ⏎
   - Sft+Gui+S
-  - Sft+Ctl+Y
+  - {t: ▽, type: trans}
   - $
   - '1'
   - '2'
