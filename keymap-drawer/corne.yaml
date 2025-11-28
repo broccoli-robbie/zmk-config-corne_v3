@@ -93,7 +93,7 @@ layers:
   - '#'
   - $
   - '%'
-  - BT CLR
+  - {t: Game, h: toggle}
   - F7
   - F8
   - F9
@@ -105,7 +105,7 @@ layers:
   - )
   - '}'
   - ']'
-  - +
+  - BT CLR
   - F4
   - F5
   - F6
