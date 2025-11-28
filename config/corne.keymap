@@ -109,7 +109,7 @@
             >;
         };
 
-        gaming_layer {
+        game-nav_layer {
             display-name = "Game/Nav";
 
             // -----------------------------------------------------------------------------------------
@@ -123,6 +123,23 @@
 &kp LSHFT  &trans  &kp S   &kp D    &kp F    &trans       &kp LEFT    &kp DOWN      &kp UP        &kp RIGHT   &kp K_SELECT  &kp LNLCK
 &kp LCTRL  &trans  &trans  &trans   &trans   &trans       &kp K_PREV  &kp K_VOL_DN  &kp K_VOL_UP  &kp K_NEXT  &kp K_EJECT   &kp RET
                            &kp RET  &kp ESC  &kp SPACE    &kp K_PP    &kp K_MUTE    &kp K_STOP
+            >;
+        };
+
+        gaming_layer {
+            display-name = "Game";
+
+            // -----------------------------------------------------------------------------------------
+            // | TAB  |     |     |     |     |     |   |     |     |     |     |      |      |
+            // | SHIFT|     |     |     |     |     |   |     |     |     |     |      |      |
+            // | CTL  |     |     |     |     |     |   |     |     |     |     |      |      |
+            //                    | ENT | ESC |SPACE|   |BACK |     |     |
+
+            bindings = <
+&kp TAB    &trans  &trans  &trans   &trans   &trans       &trans      &trans        &trans        &trans      &trans      &to 0
+&kp LSHFT  &trans  &kp S   &kp D    &kp F    &trans       &trans      &trans        &trans        &trans      &trans      &kp LNLCK
+&kp LCTRL  &trans  &trans  &trans   &trans   &trans       &trans      &trans        &trans        &trans      &trans      &kp RET
+                           &kp RET  &kp ESC  &kp SPACE    &kp BSPC    &trans        &trans
             >;
         };
     };

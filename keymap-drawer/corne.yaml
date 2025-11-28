@@ -172,3 +172,46 @@ layers:
   - PP
   - MUTE
   - STOP
+  Game:
+  - ↹
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: Base, h: toggle}
+  - $$mdi:apple-keyboard-shift$$
+  - {t: ▽, type: trans}
+  - S
+  - D
+  - F
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LNLCK
+  - $$mdi:apple-keyboard-control$$
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ⏎
+  - ⏎
+  - Esc
+  - ␣
+  - $$mdi:backspace-outline$$
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
