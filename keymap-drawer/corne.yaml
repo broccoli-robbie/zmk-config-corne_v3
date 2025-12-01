@@ -12,7 +12,7 @@ layers:
   - I
   - O
   - P
-  - _
+  - {t: Game, h: toggle}
   - ↹
   - A
   - {t: S, h: '$$mdi:apple-keyboard-control$$'}
