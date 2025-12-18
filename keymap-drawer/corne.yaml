@@ -37,7 +37,7 @@ layers:
   - .
   - /
   - '-'
-  - {t: ⌦, h: Game/Nav}
+  - {t: ⌦, h: Cursor}
   - {t: '$$mdi:backspace-outline$$', h: Number}
   - $$mdi:apple-keyboard-shift$$
   - ␣
@@ -98,7 +98,7 @@ layers:
   - F8
   - F9
   - F12
-  - {t: Game/Nav, h: toggle}
+  - {t: Cursor, h: toggle}
   - '['
   - '{'
   - (
@@ -129,37 +129,37 @@ layers:
   - APP
   - {type: held}
   - {t: ▽, type: trans}
-  Game/Nav:
-  - ↹
+  Cursor:
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: LSHIFT, h: sticky}
+  - REDO
+  - UNDO
+  - BACKSPACE
+  - CUT
   - Home
   - Page Down
   - Page Up
   - End
   - Insert
   - {t: Base, h: toggle}
-  - $$mdi:apple-keyboard-shift$$
   - {t: ▽, type: trans}
-  - S
-  - D
-  - F
-  - {t: ▽, type: trans}
+  - LSHIFT
+  - $$mdi:apple-keyboard-control$$
+  - LEFT ALT
+  - LEFT GUI
+  - COPY
   - ←
   - ↓
   - ↑
   - →
   - SELECT
   - LNLCK
-  - $$mdi:apple-keyboard-control$$
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&select_all'
+  - {t: '&select_line_right', s: '&select_line_left'}
+  - {t: '&select_word_right', s: '&select_word_left'}
+  - FIND
+  - PASTE
   - PREV
   - VOL DN
   - VOL UP
