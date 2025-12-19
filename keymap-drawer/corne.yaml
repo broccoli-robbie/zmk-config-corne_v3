@@ -36,55 +36,55 @@ layers:
   - ','
   - .
   - /
-  - '-'
+  - \
   - {t: ⌦, h: Cursor}
   - {t: '$$mdi:backspace-outline$$', h: Number}
   - $$mdi:apple-keyboard-shift$$
   - ␣
   - {t: ⏎, h: Symbol}
-  - '='
+  - {t: '-', h: Base}
   Number:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '*'
+  - ESCAPE
+  - {t: LEFT SHIFT, h: sticky}
+  - REDO
+  - UNDO
+  - BACKSPACE
+  - CUT
+  - Sft+G
   - '7'
   - '8'
   - '9'
   - /
-  - $$mdi:backspace-outline$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '*'
+  - {t: '&extend_word_right', s: '&extend_word_left'}
+  - LEFT SHIFT
   - $$mdi:apple-keyboard-control$$
   - LEFT ALT
   - LEFT GUI
-  - Sft+Ctl+Y
-  - +
+  - COPY
+  - K
   - '4'
   - '5'
   - '6'
   - '-'
-  - Calc
-  - {t: ▽, type: trans}
+  - +
+  - {t: '&extend_line_right', s: '&extend_line_left'}
   - Gui+↹
   - Win Prev
   - ⏎
   - Sft+Gui+S
-  - {t: ▽, type: trans}
-  - $
+  - PASTE
+  - J
   - '1'
   - '2'
   - '3'
-  - .
-  - ','
+  - ':'
+  - '%'
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '='
+  - $
   - '0'
   Symbol:
   - '~'
@@ -93,19 +93,19 @@ layers:
   - '#'
   - $
   - '%'
-  - {t: Game, h: toggle}
+  - ;
   - F7
   - F8
   - F9
   - F12
-  - {t: Cursor, h: toggle}
+  - BT CLR
   - '['
   - '{'
   - (
   - )
   - '}'
   - ']'
-  - BT CLR
+  - '"'
   - F4
   - F5
   - F6
@@ -117,20 +117,20 @@ layers:
   - '*'
   - '|'
   - \
-  - SCROLLLOCK
+  - ''''
   - F1
   - F2
   - F3
   - F10
   - BT 2
-  - _
-  - '-'
+  - <
   - '='
+  - '>'
   - APP
   - {type: held}
-  - {t: ▽, type: trans}
+  - ':'
   Cursor:
-  - {t: ▽, type: trans}
+  - ESCAPE
   - {t: LSHIFT, h: sticky}
   - REDO
   - UNDO
@@ -141,8 +141,8 @@ layers:
   - Page Up
   - End
   - Insert
-  - {t: Base, h: toggle}
-  - {t: ▽, type: trans}
+  - Pause Break
+  - {t: '&extend_word_right', s: '&extend_word_left'}
   - LSHIFT
   - $$mdi:apple-keyboard-control$$
   - LEFT ALT
@@ -152,10 +152,10 @@ layers:
   - ↓
   - ↑
   - →
-  - SELECT
+  - PRINTSCREEN
   - LNLCK
-  - {t: ▽, type: trans}
-  - '&select_all'
+  - {t: '&extend_line_right', s: '&extend_line_left'}
+  - Ctl+A
   - {t: '&select_line_right', s: '&select_line_left'}
   - {t: '&select_word_right', s: '&select_word_left'}
   - FIND
@@ -165,28 +165,29 @@ layers:
   - VOL UP
   - NEXT
   - EJECT
-  - ⏎
-  - {t: ⏎, type: held}
-  - Esc
-  - ␣
+  - SCROLLLOCK
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - PP
   - MUTE
   - STOP
   Game:
+  - T
   - ↹
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Q
+  - W
+  - E
+  - R
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: Base, h: toggle}
-  - $$mdi:apple-keyboard-shift$$
-  - {t: ▽, type: trans}
+  - G
+  - LEFT SHIFT
+  - A
   - S
   - D
   - F
@@ -196,12 +197,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LNLCK
+  - B
   - $$mdi:apple-keyboard-control$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Z
+  - X
+  - C
+  - V
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -209,8 +210,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ⏎
-  - ⏎
-  - Esc
+  - {t: ESCAPE, h: Number}
   - ␣
   - $$mdi:backspace-outline$$
   - {t: ▽, type: trans}
