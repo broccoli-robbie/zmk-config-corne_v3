@@ -1,40 +1,6 @@
 name: Build ZMK firmware
 on: [push, pull_request, workflow_dispatch]
 
-jobs:
-  debug-boards:
-      runs-on: ubuntu-latest
-      container:
-        image: zmkfirmware/zmk-build-arm:stable
-      steps:
-        - name: Checkout
-          uses: actions/checkout@v4
-  
-        - name: Debug — list available Zephyr boards
-          run: |
-            set -eux
-            # Prepare a base directory similar to the reusable workflow behavior
-            if [ -e zephyr/module.yml ]; then
-              base_dir="$(mktemp -d)/zmk-config"
-              mkdir -p "$base_dir"
-              cp -R config "$base_dir"/config
-            else
-              base_dir="$GITHUB_WORKSPACE"
-            fi
-  
-            cd "$base_dir"
-            echo "Initializing west (local config: ${base_dir}/config)"
-            west init -l "${base_dir}/config"
-            echo "Updating west (fetch)"
-            west update --fetch-opt=--filter=tree:0 || true
-            echo "Exporting Zephyr"
-            west zephyr-export || true
-  
-            echo "==== west boards (filtered for 'nice') ===="
-            west boards | grep -i nice || true
-            echo "==== all boards (first 200 lines) ===="
-            west boards | head -n 200 || true
-            
+jobs:         
   build:
-    needs: debug-boards
-    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@edf5c0814fd3ea202e43aad2d68fd32e882a518c
