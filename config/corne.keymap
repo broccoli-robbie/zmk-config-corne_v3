@@ -95,7 +95,7 @@
         select_word_left: select_word_left {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&gresc &kp LC(RIGHT) &kp LC(LEFT) &kp LC(RIGHT)>;
+            bindings = <&kp LC(LEFT) &kp LC(RIGHT) &kp LC(LS(LEFT))>;
             label = "SELECT_WORD_LEFT";
             wait-ms = <1>;
             tap-ms = <1>;
@@ -104,7 +104,7 @@
         select_word_right: select_word_right {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&gresc &kp LC(LEFT) &kp LC(RIGHT) &kp LC(LEFT)>;
+            bindings = <&kp LC(RIGHT) &kp LC(LEFT) &kp LC(LS(RIGHT))>;
             label = "SELECT_WORD_RIGHT";
             wait-ms = <1>;
             tap-ms = <1>;
@@ -113,7 +113,7 @@
         extend_word_left: extend_word_left {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&gresc &kp LC(LS(LEFT))>;
+            bindings = <&kp LC(LS(LEFT))>;
             label = "EXTEND_WORD_LEFT";
             wait-ms = <1>;
             tap-ms = <1>;
@@ -122,7 +122,7 @@
         extend_word_right: extend_word_right {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&gresc &kp LC(LS(RIGHT))>;
+            bindings = <&kp LC(LS(RIGHT))>;
             label = "EXTEND_WORD_RIGHT";
             wait-ms = <1>;
             tap-ms = <1>;
@@ -131,7 +131,7 @@
         select_line_left: select_line_left {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&gresc &kp END &kp LS(HOME)>;
+            bindings = <&kp END &kp LS(HOME)>;
             label = "SELECT_LINE_LEFT";
             wait-ms = <1>;
             tap-ms = <1>;
@@ -140,7 +140,7 @@
         select_line_right: select_line_right {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&gresc &kp HOME &kp LS(END)>;
+            bindings = <&kp HOME &kp LS(END)>;
             label = "SELECT_LINE_RIGHT";
             wait-ms = <1>;
             tap-ms = <1>;
@@ -156,7 +156,7 @@
         extend_line_left: extend_line_left {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&gresc &kp LS(UP) &kp LS(HOME)>;
+            bindings = <&kp LS(UP) &kp LS(HOME)>;
             label = "EXTEND_LINE_LEFT";
             wait-ms = <1>;
             tap-ms = <1>;
@@ -165,7 +165,7 @@
         extend_line_right: extend_line_right {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&gresc &kp LS(UP) &kp LS(END)>;
+            bindings = <&kp LS(DOWN) &kp LS(END)>;
             label = "EXTEND_LINE_RIGHT";
             wait-ms = <1>;
             tap-ms = <1>;
