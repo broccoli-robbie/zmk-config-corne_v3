@@ -12,9 +12,9 @@ layers:
   - I
   - O
   - P
-  - {t: Game, h: toggle}
+  - _
   - ↹
-  - A
+  - {t: A, h: LEFT SHIFT}
   - {t: S, h: '$$mdi:apple-keyboard-control$$'}
   - {t: D, h: LEFT ALT}
   - {t: F, h: LEFT GUI}
@@ -23,7 +23,7 @@ layers:
   - {t: J, h: LEFT GUI}
   - {t: K, h: RIGHT ALT}
   - {t: L, h: '$$mdi:apple-keyboard-control$$'}
-  - ;
+  - {t: ;, h: RIGHT SHIFT}
   - ''''
   - Caps Lock
   - Z
@@ -36,55 +36,55 @@ layers:
   - ','
   - .
   - /
-  - \
+  - '-'
   - {t: ⌦, h: Cursor}
   - {t: '$$mdi:backspace-outline$$', h: Number}
   - $$mdi:apple-keyboard-shift$$
   - ␣
   - {t: ⏎, h: Symbol}
-  - {t: '-', h: Base}
+  - {t: \, h: System}
   Number:
-  - ESCAPE
+  - {t: ▽, type: trans}
   - {t: LEFT SHIFT, h: sticky}
   - REDO
   - UNDO
   - BACKSPACE
   - CUT
-  - Sft+G
+  - '*'
   - '7'
   - '8'
   - '9'
   - /
-  - '*'
-  - {t: '&extend_word_right', s: '&extend_word_left'}
+  - {t: Base, h: toggle}
+  - {t: ▽, type: trans}
   - LEFT SHIFT
   - $$mdi:apple-keyboard-control$$
   - LEFT ALT
   - LEFT GUI
   - COPY
-  - K
+  - +
   - '4'
   - '5'
   - '6'
   - '-'
-  - +
-  - {t: '&extend_line_right', s: '&extend_line_left'}
+  - '#'
+  - ''
   - Gui+↹
   - Win Prev
   - ⏎
   - Sft+Gui+S
   - PASTE
-  - J
+  - $
   - '1'
   - '2'
   - '3'
-  - ':'
+  - .
   - '%'
-  - {t: ▽, type: trans}
+  - ''
   - {type: held}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - $
+  - <
+  - '>'
   - '0'
   Symbol:
   - '~'
@@ -98,7 +98,7 @@ layers:
   - F8
   - F9
   - F12
-  - BT CLR
+  - {t: Base, h: toggle}
   - '['
   - '{'
   - (
@@ -110,7 +110,7 @@ layers:
   - F5
   - F6
   - F11
-  - BT 1
+  - F14
   - '`'
   - ^
   - AMPS
@@ -122,7 +122,7 @@ layers:
   - F2
   - F3
   - F10
-  - BT 2
+  - F13
   - <
   - '='
   - '>'
@@ -141,7 +141,7 @@ layers:
   - Page Up
   - End
   - Insert
-  - Pause Break
+  - {t: Base, h: toggle}
   - {t: '&extend_word_right', s: '&extend_word_left'}
   - LSHIFT
   - $$mdi:apple-keyboard-control$$
@@ -167,8 +167,8 @@ layers:
   - EJECT
   - SCROLLLOCK
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
   - PP
   - MUTE
   - STOP
@@ -212,6 +212,49 @@ layers:
   - ⏎
   - {t: ESCAPE, h: Number}
   - ␣
-  - $$mdi:backspace-outline$$
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - BACKSPACE
+  - DELETE
+  System:
+  - ''
+  - ''
+  - LOCK
+  - SLEEP
+  - POWER
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - BT CLR
+  - ''
+  - BRIGHTNESS MINIMUM
+  - BRIGHTNESS DEC
+  - BRIGHTNESS INC
+  - BRIGHTNESS MAXIMUM
+  - BRIGHTNESS AUTO
+  - ''
+  - {t: Game, h: toggle}
+  - ''
+  - ''
+  - ''
+  - BT 1
+  - MUTE
+  - PREVIOUS
+  - VOLUME DOWN
+  - VOLUME UP
+  - NEXT
+  - STOP
+  - ''
+  - {t: Number, h: toggle}
+  - {t: Symbol, h: toggle}
+  - {t: Cursor, h: toggle}
+  - ''
+  - BT 2
+  - ''
+  - ''
+  - PLAY PAUSE
+  - ''
+  - ''
+  - {type: held}
