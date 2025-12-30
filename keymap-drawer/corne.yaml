@@ -81,8 +81,8 @@ layers:
   - .
   - '%'
   - ''
-  - {type: held}
-  - {t: ▽, type: trans}
+  - {t: Base, h: toggle, type: held}
+  - '='
   - <
   - '>'
   - '0'
@@ -94,23 +94,23 @@ layers:
   - $
   - '%'
   - ;
-  - F7
-  - F8
-  - F9
-  - F12
-  - {t: Base, h: toggle}
+  - AL FILES
+  - AL VOICEMAIL
+  - AL SPREADSHEET
+  - ':'
+  - CLEAR
   - '['
   - '{'
   - (
   - )
   - '}'
   - ']'
-  - '"'
-  - F4
-  - F5
-  - F6
-  - F11
-  - F14
+  - +
+  - AL EMAIL
+  - AL CALENDAR
+  - AL INSTANT MESSAGING
+  - '-'
+  - MENU
   - '`'
   - ^
   - AMPS
@@ -118,17 +118,17 @@ layers:
   - '|'
   - \
   - ''''
-  - F1
-  - F2
-  - F3
-  - F10
-  - F13
+  - CALC
+  - AL TEXT EDITOR
+  - AL WORD
+  - '"'
+  - SELECT
   - <
   - '='
   - '>'
   - APP
-  - {type: held}
-  - ':'
+  - {t: Base, h: toggle, type: held}
+  - _
   Cursor:
   - ESCAPE
   - {t: LSHIFT, h: sticky}
@@ -166,7 +166,7 @@ layers:
   - NEXT
   - EJECT
   - SCROLLLOCK
-  - {type: held}
+  - {t: Base, h: toggle, type: held}
   - ''
   - ''
   - PP
@@ -217,44 +217,44 @@ layers:
   - DELETE
   System:
   - ''
-  - ''
+  - AL LOGOFF
   - LOCK
   - SLEEP
   - POWER
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - BT CLR
+  - F18
+  - F7
+  - F8
+  - F9
+  - F12
+  - F15
   - ''
   - BRIGHTNESS MINIMUM
   - BRIGHTNESS DEC
   - BRIGHTNESS INC
   - BRIGHTNESS MAXIMUM
   - BRIGHTNESS AUTO
-  - ''
-  - {t: Game, h: toggle}
-  - ''
-  - ''
-  - ''
-  - BT 1
-  - MUTE
-  - PREVIOUS
-  - VOLUME DOWN
-  - VOLUME UP
-  - NEXT
-  - STOP
-  - ''
-  - {t: Number, h: toggle}
-  - {t: Symbol, h: toggle}
-  - {t: Cursor, h: toggle}
-  - ''
+  - F17
+  - F4
+  - F5
+  - F6
+  - F11
+  - F14
+  - BT 5
+  - BT 4
+  - BT 3
   - BT 2
+  - BT 1
+  - BT CLR
+  - F16
+  - F1
+  - F2
+  - F3
+  - F10
+  - F13
+  - {t: Cursor, h: toggle}
+  - {t: Number, h: toggle}
+  - {t: System, h: toggle}
   - ''
-  - ''
-  - PLAY PAUSE
-  - ''
-  - ''
-  - {type: held}
+  - {t: Symbol, h: toggle}
+  - {t: Base, h: toggle, type: held}

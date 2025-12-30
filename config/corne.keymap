@@ -205,7 +205,7 @@
 &trans  &sk LEFT_SHIFT  &kp K_REDO   &kp K_UNDO    &kp BACKSPACE  &kp K_CUT      &kp ASTERISK   &kp N7            &kp N8  &kp N9  &kp FSLH    &to 0
 &trans  &kp LEFT_SHIFT  &kp LCTRL    &kp LEFT_ALT  &kp LEFT_GUI   &kp K_COPY     &kp PLUS       &kp N4            &kp N5  &kp N6  &kp MINUS   &kp POUND
 &none   &kp LG(TAB)     &kp LS(TAB)  &kp RET       &kp LS(LG(S))  &kp K_PASTE    &kp DOLLAR     &kp N1            &kp N2  &kp N3  &kp PERIOD  &kp PERCENT
-                                     &none         &none          &trans         &kp LESS_THAN  &kp GREATER_THAN  &kp N0
+                                     &none         &to 0          &kp EQUAL      &kp LESS_THAN  &kp GREATER_THAN  &kp N0
             >;
         };
 
@@ -219,10 +219,10 @@
             //                    |  _  |  -  |  =  |   |MENU |     |     |
 
             bindings = <
-&kp TILDE  &kp EXCL   &kp AT    &kp HASH       &kp DLLR   &kp PRCNT           &kp SEMI           &kp F7  &kp F8     &kp F9  &kp F12  &to 0
-&kp LBKT   &kp LBRC   &kp LPAR  &kp RPAR       &kp RBRC   &kp RBKT            &kp DOUBLE_QUOTES  &kp F4  &kp F5     &kp F6  &kp F11  &kp F14
-&kp GRAVE  &kp CARET  &kp AMPS  &kp ASTRK      &kp PIPE   &kp BSLH            &kp SINGLE_QUOTE   &kp F1  &kp F2     &kp F3  &kp F10  &kp F13
-                                &kp LESS_THAN  &kp EQUAL  &kp GREATER_THAN    &kp K_APP          &none   &kp COLON
+&kp TILDE  &kp EXCL   &kp AT    &kp HASH       &kp DLLR   &kp PRCNT           &kp SEMI          &kp C_AL_FILES  &kp C_AL_VOICEMAIL    &kp C_AL_SPREADSHEET        &kp COLON          &kp CLEAR
+&kp LBKT   &kp LBRC   &kp LPAR  &kp RPAR       &kp RBRC   &kp RBKT            &kp PLUS          &kp C_AL_EMAIL  &kp C_AL_CALENDAR     &kp C_AL_INSTANT_MESSAGING  &kp MINUS          &kp K_MENU
+&kp GRAVE  &kp CARET  &kp AMPS  &kp ASTRK      &kp PIPE   &kp BSLH            &kp SINGLE_QUOTE  &kp K_CALC      &kp C_AL_TEXT_EDITOR  &kp C_AL_WORD               &kp DOUBLE_QUOTES  &kp K_SELECT
+                                &kp LESS_THAN  &kp EQUAL  &kp GREATER_THAN    &kp K_APP         &to 0           &kp UNDER
             >;
         };
 
@@ -239,7 +239,7 @@
 &kp ESCAPE    &sk LSHIFT  &kp K_REDO    &kp K_UNDO    &kp BACKSPACE  &kp K_CUT      &kp HOME    &kp PG_DN     &kp PG_UP     &kp END     &kp INS          &to 0
 &extend_word  &kp LSHIFT  &kp LCTRL     &kp LEFT_ALT  &kp LEFT_GUI   &kp K_COPY     &kp LEFT    &kp DOWN      &kp UP        &kp RIGHT   &kp PRINTSCREEN  &kp LNLCK
 &extend_line  &kp LC(A)   &select_line  &select_word  &kp K_FIND     &kp K_PASTE    &kp K_PREV  &kp K_VOL_DN  &kp K_VOL_UP  &kp K_NEXT  &kp K_EJECT      &kp SCROLLLOCK
-                                        &none         &none          &none          &kp K_PP    &kp K_MUTE    &kp K_STOP
+                                        &to 0         &none          &none          &kp K_PP    &kp K_MUTE    &kp K_STOP
             >;
         };
 
@@ -262,10 +262,10 @@
 
         system {
             bindings = <
-&none       &none                     &kp K_LOCK            &kp K_SLEEP           &kp K_POWER               &none                    &none  &none  &none  &none  &none  &bt BT_CLR
-&none       &kp C_BRIGHTNESS_MINIMUM  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_BRIGHTNESS_MAXIMUM  &kp C_BRIGHTNESS_AUTO    &none  &to 4  &none  &none  &none  &bt BT_SEL 0
-&kp K_MUTE  &kp K_PREVIOUS            &kp K_VOLUME_DOWN     &kp K_VOLUME_UP       &kp K_NEXT                &kp K_STOP               &none  &to 1  &to 2  &to 3  &none  &bt BT_SEL 1
-                                                            &none                 &none                     &kp K_PLAY_PAUSE         &none  &none  &none
+&none         &kp C_AL_LOGOFF           &kp K_LOCK            &kp K_SLEEP           &kp K_POWER               &none                    &kp F18  &kp F7  &kp F8  &kp F9  &kp F12  &kp F15
+&none         &kp C_BRIGHTNESS_MINIMUM  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_BRIGHTNESS_MAXIMUM  &kp C_BRIGHTNESS_AUTO    &kp F17  &kp F4  &kp F5  &kp F6  &kp F11  &kp F14
+&bt BT_SEL 4  &bt BT_SEL 3              &bt BT_SEL 2          &bt BT_SEL 1          &bt BT_SEL 0              &bt BT_CLR               &kp F16  &kp F1  &kp F2  &kp F3  &kp F10  &kp F13
+                                                              &to 3                 &to 1                     &to 5                    &none    &to 2   &to 0
             >;
 
             label = "System";
