@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: corne}
 layers:
   Base:
-  - Esc
+  - ESCAPE
   - Q
   - W
   - E
@@ -12,20 +12,20 @@ layers:
   - I
   - O
   - P
-  - ⌦
-  - {t: ↹, h: '$$mdi:apple-keyboard-control$$'}
-  - A
-  - S
-  - D
-  - F
+  - _
+  - ↹
+  - {t: A, h: LEFT SHIFT}
+  - {t: S, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: D, h: LEFT ALT}
+  - {t: F, h: LEFT GUI}
   - G
   - H
-  - J
-  - K
-  - L
-  - ;
+  - {t: J, h: LEFT GUI}
+  - {t: K, h: RIGHT ALT}
+  - {t: L, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: ;, h: RIGHT SHIFT}
   - ''''
-  - $$mdi:apple-keyboard-option$$
+  - Caps Lock
   - Z
   - X
   - C
@@ -36,55 +36,55 @@ layers:
   - ','
   - .
   - /
-  - Alt+⏎
-  - {t: Win Prev, h: Game/Nav}
+  - '-'
+  - {t: ⌦, h: Cursor}
   - {t: '$$mdi:backspace-outline$$', h: Number}
   - $$mdi:apple-keyboard-shift$$
   - ␣
   - {t: ⏎, h: Symbol}
-  - $$mdi:apple-keyboard-command$$
+  - {t: \, h: System}
   Number:
   - {t: ▽, type: trans}
-  - Alt+Q
-  - Alt+W
-  - Gui+E
-  - Gui+R
-  - Gui+T
+  - {t: LEFT SHIFT, h: sticky}
+  - REDO
+  - UNDO
+  - BACKSPACE
+  - CUT
   - '*'
   - '7'
   - '8'
   - '9'
   - /
+  - {t: Base, h: toggle}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Gui+Ctrl
-  - Gui+Shift
-  - Gui+Sft+Alt
-  - Sft+Ctl+F
-  - Sft+Ctl+Y
+  - LEFT SHIFT
+  - $$mdi:apple-keyboard-control$$
+  - LEFT ALT
+  - LEFT GUI
+  - COPY
   - +
   - '4'
   - '5'
   - '6'
   - '-'
-  - Calc
-  - {t: ▽, type: trans}
+  - '#'
+  - ''
   - Gui+↹
   - Win Prev
   - ⏎
   - Sft+Gui+S
-  - Caps Lock
+  - PASTE
   - $
   - '1'
   - '2'
   - '3'
   - .
-  - ','
-  - {t: ▽, type: trans}
+  - '%'
+  - ''
   - {type: held}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '='
+  - <
+  - '>'
   - '0'
   Symbol:
   - '~'
@@ -93,82 +93,168 @@ layers:
   - '#'
   - $
   - '%'
-  - BT CLR
+  - ;
   - F7
   - F8
   - F9
   - F12
-  - {t: Game/Nav, h: toggle}
+  - {t: Base, h: toggle}
   - '['
   - '{'
   - (
   - )
   - '}'
   - ']'
-  - +
+  - '"'
   - F4
   - F5
   - F6
   - F11
-  - BT 1
-  - '|'
+  - F14
+  - '`'
   - ^
   - AMPS
   - '*'
-  - '`'
+  - '|'
   - \
-  - SCROLLLOCK
+  - ''''
   - F1
   - F2
   - F3
   - F10
-  - BT 2
-  - _
-  - '-'
+  - F13
+  - <
   - '='
+  - '>'
   - APP
   - {type: held}
-  - {t: ▽, type: trans}
-  Game/Nav:
-  - ↹
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ':'
+  Cursor:
+  - ESCAPE
+  - {t: LSHIFT, h: sticky}
+  - REDO
+  - UNDO
+  - BACKSPACE
+  - CUT
   - Home
   - Page Down
   - Page Up
   - End
   - Insert
   - {t: Base, h: toggle}
-  - $$mdi:apple-keyboard-shift$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: '&extend_word_right', s: '&extend_word_left'}
+  - LSHIFT
+  - $$mdi:apple-keyboard-control$$
+  - LEFT ALT
+  - LEFT GUI
+  - COPY
   - ←
   - ↓
   - ↑
   - →
-  - SELECT
+  - PRINTSCREEN
   - LNLCK
-  - $$mdi:apple-keyboard-control$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: '&extend_line_right', s: '&extend_line_left'}
+  - Ctl+A
+  - {t: '&select_line_right', s: '&select_line_left'}
+  - {t: '&select_word_right', s: '&select_word_left'}
+  - FIND
+  - PASTE
   - PREV
   - VOL DN
   - VOL UP
   - NEXT
   - EJECT
-  - ⏎
-  - {t: ⏎, type: held}
-  - Esc
-  - ␣
+  - SCROLLLOCK
+  - {type: held}
+  - ''
+  - ''
   - PP
   - MUTE
   - STOP
+  Game:
+  - T
+  - ↹
+  - Q
+  - W
+  - E
+  - R
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: Base, h: toggle}
+  - G
+  - LEFT SHIFT
+  - A
+  - S
+  - D
+  - F
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - B
+  - $$mdi:apple-keyboard-control$$
+  - Z
+  - X
+  - C
+  - V
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ⏎
+  - {t: ESCAPE, h: Number}
+  - ␣
+  - {t: ▽, type: trans}
+  - BACKSPACE
+  - DELETE
+  System:
+  - ''
+  - ''
+  - LOCK
+  - SLEEP
+  - POWER
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - BT CLR
+  - ''
+  - BRIGHTNESS MINIMUM
+  - BRIGHTNESS DEC
+  - BRIGHTNESS INC
+  - BRIGHTNESS MAXIMUM
+  - BRIGHTNESS AUTO
+  - ''
+  - {t: Game, h: toggle}
+  - ''
+  - ''
+  - ''
+  - BT 1
+  - MUTE
+  - PREVIOUS
+  - VOLUME DOWN
+  - VOLUME UP
+  - NEXT
+  - STOP
+  - ''
+  - {t: Number, h: toggle}
+  - {t: Symbol, h: toggle}
+  - {t: Cursor, h: toggle}
+  - ''
+  - BT 2
+  - ''
+  - ''
+  - PLAY PAUSE
+  - ''
+  - ''
+  - {type: held}
