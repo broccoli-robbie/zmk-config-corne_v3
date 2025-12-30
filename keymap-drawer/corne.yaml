@@ -25,7 +25,7 @@ layers:
   - {t: L, h: '$$mdi:apple-keyboard-control$$'}
   - {t: ;, h: RIGHT SHIFT}
   - ''''
-  - Caps Lock
+  - Win Prev
   - Z
   - X
   - C
@@ -55,7 +55,7 @@ layers:
   - '8'
   - '9'
   - /
-  - {t: Base, h: toggle}
+  - '%'
   - {t: ▽, type: trans}
   - LEFT SHIFT
   - $$mdi:apple-keyboard-control$$
@@ -67,8 +67,8 @@ layers:
   - '5'
   - '6'
   - '-'
-  - '#'
-  - ''
+  - ^
+  - Caps Lock
   - Gui+↹
   - Win Prev
   - ⏎
@@ -79,12 +79,12 @@ layers:
   - '2'
   - '3'
   - .
-  - '%'
-  - ''
-  - {t: Base, h: toggle, type: held}
-  - '='
+  - '#'
   - <
+  - {t: '=', type: held}
   - '>'
+  - {t: Base, h: toggle}
+  - KP EQUAL
   - '0'
   Symbol:
   - '~'
@@ -126,8 +126,8 @@ layers:
   - <
   - '='
   - '>'
-  - APP
-  - {t: Base, h: toggle, type: held}
+  - {t: Base, h: toggle}
+  - {t: APP, type: held}
   - _
   Cursor:
   - ESCAPE
@@ -141,7 +141,7 @@ layers:
   - Page Up
   - End
   - Insert
-  - {t: Base, h: toggle}
+  - APPLICATION
   - {t: '&extend_word_right', s: '&extend_word_left'}
   - LSHIFT
   - $$mdi:apple-keyboard-control$$
@@ -164,14 +164,14 @@ layers:
   - VOL DN
   - VOL UP
   - NEXT
-  - EJECT
+  - STOP
   - SCROLLLOCK
   - {t: Base, h: toggle, type: held}
   - ''
   - ''
-  - PP
+  - {t: Base, h: toggle}
+  - PLAY PAUSE
   - MUTE
-  - STOP
   Game:
   - T
   - ↹
@@ -184,7 +184,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: Base, h: toggle}
+  - {t: ▽, type: trans}
   - G
   - LEFT SHIFT
   - A
@@ -212,23 +212,23 @@ layers:
   - ⏎
   - {t: ESCAPE, h: Number}
   - ␣
-  - {t: ▽, type: trans}
+  - {t: Base, h: toggle}
   - BACKSPACE
   - DELETE
   System:
-  - ''
+  - Ctl+Sft+Esc
   - AL LOGOFF
   - LOCK
   - SLEEP
   - POWER
-  - ''
+  - Alt+Ctl+⌦
   - F18
   - F7
   - F8
   - F9
   - F12
   - F15
-  - ''
+  - AL SCREEN SAVER
   - BRIGHTNESS MINIMUM
   - BRIGHTNESS DEC
   - BRIGHTNESS INC
@@ -254,7 +254,7 @@ layers:
   - F13
   - {t: Cursor, h: toggle}
   - {t: Number, h: toggle}
+  - {t: Game, h: toggle}
   - {t: System, h: toggle}
-  - ''
   - {t: Symbol, h: toggle}
   - {t: Base, h: toggle, type: held}
