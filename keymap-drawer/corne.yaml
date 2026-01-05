@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: corne}
 layers:
   Base:
-  - ESCAPE
+  - {t: Esc, s: Vim}
   - Q
   - W
   - E
@@ -14,16 +14,16 @@ layers:
   - P
   - _
   - ↹
-  - {t: A, h: LEFT SHIFT}
+  - {t: A, h: LSHIFT}
   - {t: S, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: D, h: LEFT ALT}
-  - {t: F, h: LEFT GUI}
+  - {t: D, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: F, h: '$$mdi:apple-keyboard-command$$'}
   - G
   - H
-  - {t: J, h: LEFT GUI}
-  - {t: K, h: RIGHT ALT}
+  - {t: J, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: K, h: '$$mdi:apple-keyboard-option$$'}
   - {t: L, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: ;, h: RIGHT SHIFT}
+  - {t: ;, h: RSHIFT}
   - ''''
   - Win Prev
   - Z
@@ -45,11 +45,11 @@ layers:
   - {t: \, h: System}
   Number:
   - {t: ▽, type: trans}
-  - {t: LEFT SHIFT, h: sticky}
-  - REDO
-  - UNDO
-  - BACKSPACE
-  - CUT
+  - {t: LSHIFT, h: sticky}
+  - Ctl+Y
+  - Ctl+Z
+  - $$mdi:backspace-outline$$
+  - Ctl+X
   - '*'
   - '7'
   - '8'
@@ -57,11 +57,11 @@ layers:
   - /
   - '%'
   - {t: ▽, type: trans}
-  - LEFT SHIFT
+  - LSHIFT
   - $$mdi:apple-keyboard-control$$
-  - LEFT ALT
-  - LEFT GUI
-  - COPY
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-command$$
+  - Ctl+C
   - +
   - '4'
   - '5'
@@ -73,7 +73,7 @@ layers:
   - Win Prev
   - ⏎
   - Sft+Gui+S
-  - PASTE
+  - Ctl+V
   - $
   - '1'
   - '2'
@@ -96,7 +96,7 @@ layers:
   - ;
   - AL FILES
   - AL VOICEMAIL
-  - AL SPREADSHEET
+  - AL SHEET
   - ':'
   - CLEAR
   - '['
@@ -107,8 +107,8 @@ layers:
   - ']'
   - +
   - AL EMAIL
-  - AL CALENDAR
-  - AL INSTANT MESSAGING
+  - AL CAL
+  - AL IM
   - '-'
   - MENU
   - '`'
@@ -130,47 +130,47 @@ layers:
   - {t: APP, type: held}
   - _
   Cursor:
-  - ESCAPE
+  - Esc
   - {t: LSHIFT, h: sticky}
-  - REDO
-  - UNDO
-  - BACKSPACE
-  - CUT
+  - Ctl+Y
+  - Ctl+Z
+  - $$mdi:backspace-outline$$
+  - Ctl+X
   - Home
   - Page Down
   - Page Up
   - End
   - Insert
-  - APPLICATION
+  - APP
   - {t: '&extend_word_right', s: '&extend_word_left'}
   - LSHIFT
   - $$mdi:apple-keyboard-control$$
-  - LEFT ALT
-  - LEFT GUI
-  - COPY
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-command$$
+  - Ctl+C
   - ←
   - ↓
   - ↑
   - →
-  - PRINTSCREEN
-  - LNLCK
+  - Print Scrn
+  - KP NLCK
   - {t: '&extend_line_right', s: '&extend_line_left'}
   - Ctl+A
   - {t: '&select_line_right', s: '&select_line_left'}
   - {t: '&select_word_right', s: '&select_word_left'}
   - FIND
-  - PASTE
+  - Ctl+V
   - PREV
   - VOL DN
   - VOL UP
   - NEXT
   - STOP
-  - SCROLLLOCK
+  - SLCK
   - {t: Base, h: toggle, type: held}
   - ''
   - ''
   - {t: Base, h: toggle}
-  - PLAY PAUSE
+  - PP
   - MUTE
   Game:
   - T
@@ -186,7 +186,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - G
-  - LEFT SHIFT
+  - LSHIFT
   - A
   - S
   - D
@@ -210,17 +210,60 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ⏎
-  - {t: ESCAPE, h: Number}
+  - {t: Esc, h: Number}
   - ␣
   - {t: Base, h: toggle}
-  - BACKSPACE
-  - DELETE
+  - $$mdi:backspace-outline$$
+  - ⌦
+  Vim:
+  - {t: Base, h: toggle}
+  - Esc
+  - Ctl+→
+  - '&end_word'
+  - {t: '&replace', s: '&replace_shift'}
+  - {t: ▽, type: trans}
+  - '&vim_y'
+  - {t: Ctl+Z, s: Page Up}
+  - {t: Base, h: toggle, s: '&insert_line'}
+  - {t: '&new_line_below', s: '&new_line_above'}
+  - Ctl+V
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: '&append_word', s: '&append_line'}
+  - {t: ▽, type: trans}
+  - {t: '&dd', s: Page Down}
+  - {t: ▽, type: trans}
+  - {t: '&gg', s: Ctl+End}
+  - ←
+  - ↓
+  - ↑
+  - →
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ⌦
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Ctl+←
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-control$$
+  - {t: ▽, type: trans}
+  - {t: Base, h: toggle}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   System:
   - Ctl+Sft+Esc
   - AL LOGOFF
   - LOCK
   - SLEEP
-  - POWER
+  - PWR
   - Alt+Ctl+⌦
   - F18
   - F7
@@ -228,12 +271,12 @@ layers:
   - F9
   - F12
   - F15
-  - AL SCREEN SAVER
-  - BRIGHTNESS MINIMUM
-  - BRIGHTNESS DEC
-  - BRIGHTNESS INC
-  - BRIGHTNESS MAXIMUM
-  - BRIGHTNESS AUTO
+  - AL LOCK
+  - BRI MIN
+  - BRI DN
+  - BRI UP
+  - BRI MAX
+  - BRI AUTO
   - F17
   - F4
   - F5
@@ -255,6 +298,6 @@ layers:
   - {t: Cursor, h: toggle}
   - {t: Number, h: toggle}
   - {t: Game, h: toggle}
-  - {t: System, h: toggle}
+  - {t: Vim, h: toggle}
   - {t: Symbol, h: toggle}
   - {t: Base, h: toggle, type: held}

@@ -389,7 +389,7 @@
         };
 
         vim {
-            display-name = "Vim"
+            display-name = "Vim";
             bindings = <
 &to 0   &kp ESC &kp LC(RIGHT) &end_word &vim_r    &trans            &vim_y   &vim_u   &vim_i &vim_o    &kp LC(V) &trans
 &trans  &vim_a  &trans        &vim_d    &trans    &vim_g            &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans    &trans
