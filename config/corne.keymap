@@ -205,7 +205,7 @@
 &trans    &sk LEFT_SHIFT  &kp K_REDO   &kp K_UNDO     &kp BACKSPACE  &kp K_CUT           &kp ASTERISK  &kp N7        &kp N8  &kp N9  &kp FSLH    &kp PERCENT
 &trans    &kp LEFT_SHIFT  &kp LCTRL    &kp LEFT_ALT   &kp LEFT_GUI   &kp K_COPY          &kp PLUS      &kp N4        &kp N5  &kp N6  &kp MINUS   &kp CARET
 &kp CAPS  &kp LG(TAB)     &kp LS(TAB)  &kp RET        &kp LS(LG(S))  &kp K_PASTE         &kp DOLLAR    &kp N1        &kp N2  &kp N3  &kp PERIOD  &kp HASH
-                                       &kp LESS_THAN  &kp EQUAL      &kp GREATER_THAN    &to 0         &kp KP_EQUAL  &kp N0
+                                       &kp LESS_THAN  &kp EQUAL      &kp GREATER_THAN    &to 0         &kp KP_ENTER  &kp N0
             >;
         };
 
