@@ -180,6 +180,31 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        vim_s: vim_s {
+            compatible = "zmk,behavior-mod-morph";
+            label = "VIM_S";
+            bindings = <&substitute_char>, <&substitute_line>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        change_line: change_line {
+            compatible = "zmk,behavior-tap-dance";
+            label = "CHANGE_LINE";
+            #binding-cells = <0>;
+            bindings = <&none>, <&change>;
+        };
+
+        vim_c: vim_c {
+            compatible = "zmk,behavior-mod-morph";
+            label = "VIM_C";
+            bindings = <&change_line>, <&change_line_end>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 };
 
@@ -333,6 +358,50 @@
             bindings = <&kp HOME &kp ENTER &kp UP>;
             label = "NEW_LINE_ABOVE";
         };
+
+        substitute_char: substitute_char {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DEL &to 0>;
+            label = "SUBSTITUTE_CHAR";
+        };
+
+        substitute_line: substitute_line {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&select_line &kp BACKSPACE &to 0>;
+            label = "SUBSTITUTE_LINE";
+        };
+
+        change: change {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&delete_line &to 0>;
+            label = "CHANGE";
+        };
+
+        select_line_end: select_line_end {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(END)>;
+            label = "SELECT_LINE_END";
+            wait-ms = <1>;
+            tap-ms = <1>;
+        };
+
+        delete_line_end: delete_line_end {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&select_line_end &kp BACKSPACE>;
+            label = "DELETE_LINE_END";
+        };
+
+        change_line_end: change_line_end {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&delete_line_end &to 0>;
+            label = "CHANGE_LINE_END";
+        };
     };
 
     keymap {
@@ -341,9 +410,9 @@
         base {
             display-name = "Base";
             bindings = <
-&vim_esc    &kp Q         &kp W        &kp E        &kp R         &kp T          &kp Y     &kp U        &kp I         &kp O        &kp P            &kp UNDER
+&vim_esc    &kp Q         &kp W        &kp E        &kp R         &kp T          &kp Y     &kp U        &kp I         &kp O        &kp P            &kp MINUS
 &kp TAB     &hml LSHIFT A &hml LCTRL S &hml LALT D  &hml LGUI F   &kp G          &kp H     &hmr LGUI J  &hmr RALT K   &hmr RCTRL L &hmr RSHIFT SEMI &kp SQT
-&kp LS(TAB) &kp Z         &kp X        &kp C        &kp V         &kp B          &kp N     &kp M        &kp COMMA     &kp DOT      &kp FSLH         &kp MINUS
+&kp LS(TAB) &kp Z         &kp X        &kp C        &kp V         &kp B          &kp N     &kp M        &kp COMMA     &kp DOT      &kp FSLH         &kp UNDER
                                        &my_lt 3 DEL &my_lt 1 BSPC &kp LSHFT      &kp SPACE &my_lt 2 RET &my_lt 6 BSLH
             >;
         };
@@ -361,10 +430,10 @@
         symbol {
             display-name = "Symbol";
             bindings = <
-&kp TILDE &kp EXCL  &kp AT   &kp HASH &kp DLLR  &kp PRCNT      &kp SEMI &kp C_AL_FILES &kp C_AL_VOICEMAIL   &kp C_AL_SHEET &kp COLON &kp CLEAR
-&kp LBKT  &kp LBRC  &kp LPAR &kp RPAR &kp RBRC  &kp RBKT       &kp PLUS &kp C_AL_EMAIL &kp C_AL_CAL         &kp C_AL_IM    &kp MINUS &kp K_MENU
-&kp GRAVE &kp CARET &kp AMPS &kp STAR &kp PIPE  &kp BSLH       &kp SQT  &kp K_CALC     &kp C_AL_TEXT_EDITOR &kp C_AL_WORD  &kp DQT   &kp K_SELECT
-                             &kp LT   &kp EQUAL &kp GT         &to 0    &kp K_APP      &kp UNDER
+&kp TILDE &kp EXCL  &kp AT   &kp HASH &kp DLLR  &kp PRCNT      &kp SEMI &kp C_AL_FILES   &kp C_AL_VOICEMAIL   &kp C_AL_SHEET &kp COLON &kp CLEAR
+&kp LBKT  &kp LBRC  &kp LPAR &kp RPAR &kp RBRC  &kp RBKT       &kp PLUS &kp C_AL_EMAIL   &kp C_AL_CAL         &kp C_AL_IM    &kp MINUS &kp K_MENU
+&kp GRAVE &kp CARET &kp AMPS &kp STAR &kp PIPE  &kp BSLH       &kp SQT  &kp K_CALCULATOR &kp C_AL_TEXT_EDITOR &kp C_AL_WORD  &kp DQT   &kp K_SELECT
+                             &kp LT   &kp EQUAL &kp GT         &to 0    &kp K_APP        &kp UNDER
             >;
         };
 
@@ -391,10 +460,10 @@
         vim {
             display-name = "Vim";
             bindings = <
-&to 0   &kp ESC &kp LC(RIGHT) &end_word &vim_r    &trans            &vim_y   &vim_u   &vim_i &vim_o    &kp LC(V) &trans
-&trans  &vim_a  &trans        &vim_d    &trans    &vim_g            &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans    &trans
-&trans  &trans  &kp DEL       &trans    &trans    &kp LC(LEFT)      &trans   &trans   &trans &trans    &trans    &trans
-                              &kp LALT  &kp LCTRL &trans            &to 0    &trans   &trans
+&to 0   &kp ESC &kp LC(RIGHT) &end_word &vim_r   &none             &vim_y   &vim_u   &vim_i &vim_o    &kp LC(V) &none
+&trans  &vim_a  &vim_s        &vim_d    &none    &vim_g            &kp LEFT &kp DOWN &kp UP &kp RIGHT &none     &none
+&trans  &none   &kp DEL       &vim_c    &none    &kp LC(LEFT)      &none    &none    &none  &none     &none     &none
+                              &kp LALT  &kp LCTRL &trans            &to 0    &trans   &none
             >;
         };
 

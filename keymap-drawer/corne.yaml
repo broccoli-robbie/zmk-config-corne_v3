@@ -12,7 +12,7 @@ layers:
   - I
   - O
   - P
-  - _
+  - '-'
   - ↹
   - {t: A, h: LSHIFT}
   - {t: S, h: '$$mdi:apple-keyboard-control$$'}
@@ -36,7 +36,7 @@ layers:
   - ','
   - .
   - /
-  - '-'
+  - _
   - {t: ⌦, h: Cursor}
   - {t: '$$mdi:backspace-outline$$', h: Number}
   - $$mdi:apple-keyboard-shift$$
@@ -118,7 +118,7 @@ layers:
   - '|'
   - \
   - ''''
-  - CALC
+  - CALCULATOR
   - AL TEXT EDITOR
   - AL WORD
   - '"'
@@ -221,43 +221,43 @@ layers:
   - Ctl+→
   - '&end_word'
   - {t: '&replace', s: '&replace_shift'}
-  - {t: ▽, type: trans}
+  - ''
   - '&vim_y'
   - {t: Ctl+Z, s: Page Up}
   - {t: Base, h: toggle, s: '&insert_line'}
   - {t: '&new_line_below', s: '&new_line_above'}
   - Ctl+V
-  - {t: ▽, type: trans}
+  - ''
   - {t: ▽, type: trans}
   - {t: '&append_word', s: '&append_line'}
-  - {t: ▽, type: trans}
+  - {t: '&substitute_char', s: '&substitute_line'}
   - {t: '&dd', s: Page Down}
-  - {t: ▽, type: trans}
+  - ''
   - {t: '&gg', s: Ctl+End}
   - ←
   - ↓
   - ↑
   - →
+  - ''
+  - ''
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
   - ⌦
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: '&change_line', s: '&change_line_end'}
+  - ''
   - Ctl+←
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
   - {t: ▽, type: trans}
   - {t: Base, h: toggle}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
   System:
   - Ctl+Sft+Esc
   - AL LOGOFF
