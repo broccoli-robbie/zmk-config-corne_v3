@@ -423,7 +423,7 @@
 &trans   &sk LSHIFT  &kp LC(Y)   &kp LC(Z) &kp BSPC      &kp LC(X)      &kp STAR &kp N7       &kp N8 &kp N9 &kp FSLH  &kp PRCNT
 &trans   &kp LSHIFT  &kp LCTRL   &kp LALT  &kp LGUI      &kp LC(C)      &kp PLUS &kp N4       &kp N5 &kp N6 &kp MINUS &kp CARET
 &kp CAPS &kp LG(TAB) &kp LS(TAB) &kp RET   &kp LS(LG(S)) &kp LC(V)      &kp DLLR &kp N1       &kp N2 &kp N3 &kp DOT   &kp HASH
-                                 &kp LT    &kp EQUAL     &kp GT         &to 0    &kp KP_EQUAL &kp N0
+                                 &kp LT    &kp EQUAL     &kp GT         &to 0    &kp KP_ENTER &kp N0
             >;
         };
 

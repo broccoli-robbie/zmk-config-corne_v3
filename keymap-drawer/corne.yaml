@@ -84,7 +84,7 @@ layers:
   - {t: '=', type: held}
   - '>'
   - {t: Base, h: toggle}
-  - KP EQUAL
+  - KP ENTER
   - '0'
   Symbol:
   - '~'
