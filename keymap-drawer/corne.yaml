@@ -12,7 +12,7 @@ layers:
   - I
   - O
   - P
-  - _
+  - \
   - ↹
   - {t: A, h: LSHIFT}
   - {t: S, h: '$$mdi:apple-keyboard-control$$'}
@@ -36,7 +36,7 @@ layers:
   - ','
   - .
   - /
-  - \
+  - '@'
   - {t: ⌦, h: Cursor}
   - {t: '$$mdi:backspace-outline$$', h: Number}
   - $$mdi:apple-keyboard-shift$$
