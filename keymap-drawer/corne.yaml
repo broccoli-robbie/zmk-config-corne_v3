@@ -17,15 +17,15 @@ layers:
   - {t: A, h: LSHIFT}
   - {t: S, h: '$$mdi:apple-keyboard-control$$'}
   - {t: D, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: F, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: F, h: '$$mdi:microsoft-windows$$'}
   - G
   - H
-  - {t: J, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: J, h: '$$mdi:microsoft-windows$$'}
   - {t: K, h: '$$mdi:apple-keyboard-option$$'}
   - {t: L, h: '$$mdi:apple-keyboard-control$$'}
   - {t: ;, h: RSHIFT}
   - ''''
-  - Win Prev
+  - Shift Tab
   - Z
   - X
   - C
@@ -38,7 +38,7 @@ layers:
   - /
   - '@'
   - {t: ⌦, h: Cursor}
-  - {t: '$$mdi:backspace-outline$$', h: Number}
+  - {t: '$$mdi:backspace$$', h: Number}
   - $$mdi:apple-keyboard-shift$$
   - ␣
   - {t: ⏎, h: Symbol}
@@ -48,7 +48,7 @@ layers:
   - {t: LSHIFT, h: sticky}
   - Ctl+Y
   - Ctl+Z
-  - $$mdi:backspace-outline$$
+  - $$mdi:backspace$$
   - Ctl+X
   - '*'
   - '7'
@@ -60,7 +60,7 @@ layers:
   - LSHIFT
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-command$$
+  - $$mdi:microsoft-windows$$
   - Ctl+C
   - +
   - '4'
@@ -70,7 +70,7 @@ layers:
   - ^
   - Caps Lock
   - Gui+↹
-  - Win Prev
+  - Shift Tab
   - ⏎
   - Sft+Gui+S
   - Ctl+V
@@ -134,7 +134,7 @@ layers:
   - {t: LSHIFT, h: sticky}
   - Ctl+Y
   - Ctl+Z
-  - $$mdi:backspace-outline$$
+  - $$mdi:backspace$$
   - Ctl+X
   - Home
   - Page Down
@@ -146,7 +146,7 @@ layers:
   - LSHIFT
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-command$$
+  - $$mdi:microsoft-windows$$
   - Ctl+C
   - ←
   - ↓
@@ -213,7 +213,7 @@ layers:
   - {t: Esc, h: Number}
   - ␣
   - {t: Base, h: toggle}
-  - $$mdi:backspace-outline$$
+  - $$mdi:backspace$$
   - ⌦
   Vim:
   - {t: Base, h: toggle}

@@ -137,7 +137,7 @@ parse_config:
     '&kp LC(LS(TAB))': Tab Left
     '&kp LA(F4)': Win Close
     '&kp LC(F4)': Tab Close
-    '&kp LS(TAB)': Win Prev
+    '&kp LS(TAB)': Shift Tab
     '&kp LS(INS)': Paste
     '&kp LG(L)': Lock
 
@@ -229,12 +229,12 @@ parse_config:
     '&kp LSHFT': $$mdi:apple-keyboard-shift$$
     '&kp LCTRL': $$mdi:apple-keyboard-control$$
     '&kp RCTRL': $$mdi:apple-keyboard-control$$
-    '&kp LGUI': $$mdi:apple-keyboard-command$$
-    '&kp RGUI': $$mdi:apple-keyboard-command$$
+    '&kp LGUI': $$mdi:microsoft-windows$$
+    '&kp RGUI': $$mdi:microsoft-windows$$
     '&kp LALT': $$mdi:apple-keyboard-option$$
     '&kp RALT': $$mdi:apple-keyboard-option$$
     '&kp RSHFT': $$mdi:apple-keyboard-shift$$
-    '&kp BSPC': $$mdi:backspace-outline$$
+    '&kp BSPC': $$mdi:backspace$$
 
   qmk_keycode_map:
     XXXXXXX: ''
