@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: corne}
 layers:
   Base:
-  - {t: Esc, s: Vim}
+  - {t: '$$mdi:keyboard-esc$$', s: Vim}
   - Q
   - W
   - E
@@ -13,8 +13,8 @@ layers:
   - O
   - P
   - \
-  - ↹
-  - {t: A, h: LSHIFT}
+  - $$mdi:keyboard-tab$$
+  - {t: A, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: S, h: '$$mdi:apple-keyboard-control$$'}
   - {t: D, h: '$$mdi:apple-keyboard-option$$'}
   - {t: F, h: '$$mdi:microsoft-windows$$'}
@@ -23,7 +23,7 @@ layers:
   - {t: J, h: '$$mdi:microsoft-windows$$'}
   - {t: K, h: '$$mdi:apple-keyboard-option$$'}
   - {t: L, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: ;, h: RSHIFT}
+  - {t: ;, h: '$$mdi:apple-keyboard-shift$$'}
   - ''''
   - Shift Tab
   - Z
@@ -37,15 +37,15 @@ layers:
   - .
   - /
   - '@'
-  - {t: ⌦, h: Cursor}
+  - {t: '$$mdi:backspace-reverse-outline$$', h: Cursor}
   - {t: '$$mdi:backspace$$', h: Number}
   - $$mdi:apple-keyboard-shift$$
-  - ␣
-  - {t: ⏎, h: Symbol}
+  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-return$$', h: Symbol}
   - {t: '-', h: System}
   Number:
-  - {t: ▽, type: trans}
-  - {t: LSHIFT, h: sticky}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: sticky}
   - Ctl+Y
   - Ctl+Z
   - $$mdi:backspace$$
@@ -56,8 +56,8 @@ layers:
   - '9'
   - /
   - '%'
-  - {t: ▽, type: trans}
-  - LSHIFT
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:microsoft-windows$$
@@ -68,10 +68,10 @@ layers:
   - '6'
   - '-'
   - ^
-  - Caps Lock
-  - Gui+↹
+  - $$mdi:apple-keyboard-caps$$
+  - Gui+$$mdi:keyboard-tab$$
   - Shift Tab
-  - ⏎
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - Sft+Gui+S
   - Ctl+V
   - $
@@ -113,7 +113,7 @@ layers:
   - MENU
   - '`'
   - ^
-  - AMPS
+  - '&'
   - '*'
   - '|'
   - \
@@ -130,29 +130,29 @@ layers:
   - {t: APP, type: held}
   - _
   Cursor:
-  - Esc
-  - {t: LSHIFT, h: sticky}
+  - $$mdi:keyboard-esc$$
+  - {t: '$$mdi:apple-keyboard-shift$$', h: sticky}
   - Ctl+Y
   - Ctl+Z
   - $$mdi:backspace$$
   - Ctl+X
   - Home
-  - Page Down
-  - Page Up
+  - $$mdi:transfer-down$$
+  - $$mdi:transfer-up$$
   - End
   - Insert
   - APP
   - {t: '&extend_word_right', s: '&extend_word_left'}
-  - LSHIFT
+  - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:microsoft-windows$$
   - Ctl+C
-  - ←
-  - ↓
-  - ↑
-  - →
-  - Print Scrn
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-up-bold$$
+  - $$mdi:arrow-right-bold$$
+  - PrtScr
   - KP NLCK
   - {t: '&extend_line_right', s: '&extend_line_left'}
   - Ctl+A
@@ -174,78 +174,78 @@ layers:
   - MUTE
   Game:
   - T
-  - ↹
+  - $$mdi:keyboard-tab$$
   - Q
   - W
   - E
   - R
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - G
-  - LSHIFT
+  - $$mdi:apple-keyboard-shift$$
   - A
   - S
   - D
   - F
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - B
   - $$mdi:apple-keyboard-control$$
   - Z
   - X
   - C
   - V
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ⏎
-  - {t: Esc, h: Number}
-  - ␣
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '$$mdi:keyboard-esc$$', h: Number}
+  - $$mdi:keyboard-space$$
   - {t: Base, h: toggle}
   - $$mdi:backspace$$
-  - ⌦
+  - $$mdi:backspace-reverse-outline$$
   Vim:
   - {t: Base, h: toggle}
-  - Esc
-  - Ctl+→
+  - $$mdi:keyboard-esc$$
+  - Ctl+$$mdi:arrow-right-bold$$
   - '&end_word'
   - {t: '&replace', s: '&replace_shift'}
   - ''
   - '&vim_y'
-  - {t: Ctl+Z, s: Page Up}
+  - {t: Ctl+Z, s: '$$mdi:transfer-up$$'}
   - {t: Base, h: toggle, s: '&insert_line'}
   - {t: '&new_line_below', s: '&new_line_above'}
   - Ctl+V
   - ''
-  - {t: ▽, type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '&append_word', s: '&append_line'}
   - {t: '&substitute_char', s: '&substitute_line'}
-  - {t: '&dd', s: Page Down}
+  - {t: '&dd', s: '$$mdi:transfer-down$$'}
   - ''
   - {t: '&gg', s: Ctl+End}
-  - ←
-  - ↓
-  - ↑
-  - →
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-up-bold$$
+  - $$mdi:arrow-right-bold$$
   - ''
   - ''
-  - {t: ▽, type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - ''
-  - ⌦
+  - $$mdi:backspace-reverse-outline$$
   - {t: '&change_line', s: '&change_line_end'}
   - ''
-  - Ctl+←
+  - Ctl+$$mdi:arrow-left-bold$$
   - ''
   - ''
   - ''
@@ -254,24 +254,24 @@ layers:
   - ''
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
-  - {t: ▽, type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: Base, h: toggle}
-  - {t: ▽, type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - ''
   System:
-  - Ctl+Sft+Esc
+  - Ctl+Sft+$$mdi:keyboard-esc$$
   - AL LOGOFF
   - LOCK
   - SLEEP
   - PWR
-  - Alt+Ctl+⌦
+  - Alt+Ctl+$$mdi:backspace-reverse-outline$$
   - F18
   - F7
   - F8
   - F9
   - F12
   - F15
-  - AL LOCK
+  - $$mdi:lock$$
   - BRI MIN
   - BRI DN
   - BRI UP
