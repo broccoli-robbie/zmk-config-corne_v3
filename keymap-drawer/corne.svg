@@ -33,6 +33,15 @@
 <svg id="mdi:calculator">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-calculator" viewBox="0 0 24 24"><path d="M7,2H17A2,2 0 0,1 19,4V20A2,2 0 0,1 17,22H7A2,2 0 0,1 5,20V4A2,2 0 0,1 7,2M7,4V8H17V4H7M7,10V12H9V10H7M11,10V12H13V10H11M15,10V12H17V10H15M7,14V16H9V14H7M11,14V16H13V14H11M15,14V16H17V14H15M7,18V20H9V18H7M11,18V20H13V18H11M15,18V20H17V18H15Z" /></svg>
 </svg>
+<svg id="mdi:content-copy">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-content-copy" viewBox="0 0 24 24"><path d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z" /></svg>
+</svg>
+<svg id="mdi:content-cut">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-content-cut" viewBox="0 0 24 24"><path d="M19,3L13,9L15,11L22,4V3M12,12.5A0.5,0.5 0 0,1 11.5,12A0.5,0.5 0 0,1 12,11.5A0.5,0.5 0 0,1 12.5,12A0.5,0.5 0 0,1 12,12.5M6,20A2,2 0 0,1 4,18C4,16.89 4.9,16 6,16A2,2 0 0,1 8,18C8,19.11 7.1,20 6,20M6,8A2,2 0 0,1 4,6C4,4.89 4.9,4 6,4A2,2 0 0,1 8,6C8,7.11 7.1,8 6,8M9.64,7.64C9.87,7.14 10,6.59 10,6A4,4 0 0,0 6,2A4,4 0 0,0 2,6A4,4 0 0,0 6,10C6.59,10 7.14,9.87 7.64,9.64L10,12L7.64,14.36C7.14,14.13 6.59,14 6,14A4,4 0 0,0 2,18A4,4 0 0,0 6,22A4,4 0 0,0 10,18C10,17.41 9.87,16.86 9.64,16.36L12,14L19,21H22V20L9.64,7.64Z" /></svg>
+</svg>
+<svg id="mdi:content-paste">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-content-paste" viewBox="0 0 24 24"><path d="M19,20H5V4H7V7H17V4H19M12,2A1,1 0 0,1 13,3A1,1 0 0,1 12,4A1,1 0 0,1 11,3A1,1 0 0,1 12,2M19,2H14.82C14.4,0.84 13.3,0 12,0C10.7,0 9.6,0.84 9.18,2H5A2,2 0 0,0 3,4V20A2,2 0 0,0 5,22H19A2,2 0 0,0 21,20V4A2,2 0 0,0 19,2Z" /></svg>
+</svg>
 <svg id="mdi:keyboard-esc">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-keyboard-esc" viewBox="0 0 24 24"><path d="M1 7H7V9H3V11H7V13H3V15H7V17H1V7M11 7H15V9H11V11H13C14.11 11 15 11.9 15 13V15C15 16.11 14.11 17 13 17H9V15H13V13H11C9.9 13 9 12.11 9 11V9C9 7.9 9.9 7 11 7M19 7H21C22.11 7 23 7.9 23 9V10H21V9H19V15H21V14H23V15C23 16.11 22.11 17 21 17H19C17.9 17 17 16.11 17 15V9C17 7.9 17.9 7 19 7Z" /></svg>
 </svg>
@@ -48,14 +57,17 @@
 <svg id="mdi:keyboard-tab-reverse">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-keyboard-tab-reverse" viewBox="0 0 24 24"><path d="M4 6H2V18H4M11 6L5 12L11 18L12.41 16.58L8.83 13H23V11H8.83L12.41 7.41L11 6Z" /></svg>
 </svg>
+<svg id="mdi:linux">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-linux" viewBox="0 0 24 24"><path d="M14.62,8.35C14.2,8.63 12.87,9.39 12.67,9.54C12.28,9.85 11.92,9.83 11.53,9.53C11.33,9.37 10,8.61 9.58,8.34C9.1,8.03 9.13,7.64 9.66,7.42C11.3,6.73 12.94,6.78 14.57,7.45C15.06,7.66 15.08,8.05 14.62,8.35M21.84,15.63C20.91,13.54 19.64,11.64 18,9.97C17.47,9.42 17.14,8.8 16.94,8.09C16.84,7.76 16.77,7.42 16.7,7.08C16.5,6.2 16.41,5.3 16,4.47C15.27,2.89 14,2.07 12.16,2C10.35,2.05 9,2.81 8.21,4.4C8,4.83 7.85,5.28 7.75,5.74C7.58,6.5 7.43,7.29 7.25,8.06C7.1,8.71 6.8,9.27 6.29,9.77C4.68,11.34 3.39,13.14 2.41,15.12C2.27,15.41 2.13,15.7 2.04,16C1.85,16.66 2.33,17.12 3.03,16.96C3.47,16.87 3.91,16.78 4.33,16.65C4.74,16.5 4.9,16.6 5,17C5.65,19.15 7.07,20.66 9.24,21.5C13.36,23.06 18.17,20.84 19.21,16.92C19.28,16.65 19.38,16.55 19.68,16.65C20.14,16.79 20.61,16.89 21.08,17C21.57,17.09 21.93,16.84 22,16.36C22.03,16.1 21.94,15.87 21.84,15.63" /></svg>
+</svg>
 <svg id="mdi:lock-outline">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-lock-outline" viewBox="0 0 24 24"><path d="M12,17C10.89,17 10,16.1 10,15C10,13.89 10.89,13 12,13A2,2 0 0,1 14,15A2,2 0 0,1 12,17M18,20V10H6V20H18M18,8A2,2 0 0,1 20,10V20A2,2 0 0,1 18,22H6C4.89,22 4,21.1 4,20V10C4,8.89 4.89,8 6,8H7V6A5,5 0 0,1 12,1A5,5 0 0,1 17,6V8H18M12,3A3,3 0 0,0 9,6V8H15V6A3,3 0 0,0 12,3Z" /></svg>
 </svg>
 <svg id="mdi:logout">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-logout" viewBox="0 0 24 24"><path d="M17 7L15.59 8.41L18.17 11H8V13H18.17L15.59 15.58L17 17L22 12M4 5H12V3H4C2.9 3 2 3.9 2 5V19C2 20.1 2.9 21 4 21H12V19H4V5Z" /></svg>
 </svg>
-<svg id="mdi:microsoft-windows">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-microsoft-windows" viewBox="0 0 24 24"><path d="M3,12V6.75L9,5.43V11.91L3,12M20,3V11.75L10,11.9V5.21L20,3M3,13L9,13.09V19.9L3,18.75V13M20,13.25V22L10,20.09V13.1L20,13.25Z" /></svg>
+<svg id="mdi:monitor-screenshot">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-monitor-screenshot" viewBox="0 0 24 24"><path d="M9,6H5V10H7V8H9M19,10H17V12H15V14H19M21,16H3V4H21M21,2H3C1.89,2 1,2.89 1,4V16A2,2 0 0,0 3,18H10V20H8V22H16V20H14V18H21A2,2 0 0,0 23,16V4C23,2.89 22.1,2 21,2" /></svg>
 </svg>
 <svg id="mdi:play-pause">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-play-pause" viewBox="0 0 24 24"><path d="M3,5V19L11,12M13,19H16V5H13M18,5V19H21V5" /></svg>
@@ -63,14 +75,20 @@
 <svg id="mdi:power-sleep">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-power-sleep" viewBox="0 0 24 24"><path d="M18.73,18C15.4,21.69 9.71,22 6,18.64C2.33,15.31 2.04,9.62 5.37,5.93C6.9,4.25 9,3.2 11.27,3C7.96,6.7 8.27,12.39 12,15.71C13.63,17.19 15.78,18 18,18C18.25,18 18.5,18 18.73,18Z" /></svg>
 </svg>
+<svg id="mdi:printer-outline">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-printer-outline" viewBox="0 0 24 24"><path d="M19 8C20.66 8 22 9.34 22 11V17H18V21H6V17H2V11C2 9.34 3.34 8 5 8H6V3H18V8H19M8 5V8H16V5H8M16 19V15H8V19H16M18 15H20V11C20 10.45 19.55 10 19 10H5C4.45 10 4 10.45 4 11V15H6V13H18V15M19 11.5C19 12.05 18.55 12.5 18 12.5C17.45 12.5 17 12.05 17 11.5C17 10.95 17.45 10.5 18 10.5C18.55 10.5 19 10.95 19 11.5Z" /></svg>
+</svg>
+<svg id="mdi:redo">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-redo" viewBox="0 0 24 24"><path d="M18.4,10.6C16.55,9 14.15,8 11.5,8C6.85,8 2.92,11.03 1.54,15.22L3.9,16C4.95,12.81 7.95,10.5 11.5,10.5C13.45,10.5 15.23,11.22 16.62,12.38L13,16H22V7L18.4,10.6Z" /></svg>
+</svg>
 <svg id="mdi:skip-next">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-skip-next" viewBox="0 0 24 24"><path d="M16,18H18V6H16M6,18L14.5,12L6,6V18Z" /></svg>
 </svg>
 <svg id="mdi:skip-previous">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-skip-previous" viewBox="0 0 24 24"><path d="M6,18V6H8V18H6M9.5,12L18,6V18L9.5,12Z" /></svg>
 </svg>
-<svg id="mdi:stop-circle">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-stop-circle" viewBox="0 0 24 24"><path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M9,9H15V15H9" /></svg>
+<svg id="mdi:stop">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-stop" viewBox="0 0 24 24"><path d="M18,18H6V6H18V18Z" /></svg>
 </svg>
 <svg id="mdi:transfer">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-transfer" viewBox="0 0 24 24"><path d="M8 4A2 2 0 0 0 6 6V10H8V6H16V9H13.5L17 12.5L20.5 9H18V6A2 2 0 0 0 16 4H8M3 12V14H11V12H3M3 15V17H11V15H3M13 15V17H21V15H13M3 18V20H11V18H3M13 18V20H21V18H13Z" /></svg>
@@ -80,6 +98,9 @@
 </svg>
 <svg id="mdi:transfer-up">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-transfer-up" viewBox="0 0 24 24"><path d="M8,21V19H16V21H8M8,17V15H16V17H8M8,13V11H16V13H8M19,9H5L12,2L19,9Z" /></svg>
+</svg>
+<svg id="mdi:undo">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-undo" viewBox="0 0 24 24"><path d="M12.5,8C9.85,8 7.45,9 5.6,10.6L2,7V16H11L7.38,12.38C8.77,11.22 10.54,10.5 12.5,10.5C16.04,10.5 19.05,12.81 20.1,16L22.47,15.22C21.08,11.03 17.15,8 12.5,8Z" /></svg>
 </svg>
 <svg id="mdi:volume-minus">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-volume-minus" viewBox="0 0 24 24"><path d="M3,9H7L12,4V20L7,15H3V9M14,11H22V13H14V11Z" /></svg>
@@ -676,7 +697,7 @@ path.combo {
 <g transform="translate(360, 130)" class="key keypos-16">
 <rect rx="6" ry="6" x="-38" y="-38" width="77" height="77" class="key"/>
 <text x="0" y="0" class="key tap">F</text>
-<use href="#mdi:microsoft-windows" xlink:href="#mdi:microsoft-windows" x="-8" y="18" height="16" width="16.0" class="key hold glyph mdi:microsoft-windows"/>
+<use href="#mdi:linux" xlink:href="#mdi:linux" x="-8" y="18" height="16" width="16.0" class="key hold glyph mdi:linux"/>
 </g>
 <g transform="translate(440, 140)" class="key keypos-17">
 <rect rx="6" ry="6" x="-38" y="-38" width="77" height="77" class="key"/>
@@ -689,7 +710,7 @@ path.combo {
 <g transform="translate(840, 130)" class="key keypos-19">
 <rect rx="6" ry="6" x="-38" y="-38" width="77" height="77" class="key"/>
 <text x="0" y="0" class="key tap">J</text>
-<use href="#mdi:microsoft-windows" xlink:href="#mdi:microsoft-windows" x="-8" y="18" height="16" width="16.0" class="key hold glyph mdi:microsoft-windows"/>
+<use href="#mdi:linux" xlink:href="#mdi:linux" x="-8" y="18" height="16" width="16.0" class="key hold glyph mdi:linux"/>
 </g>
 <g transform="translate(920, 120)" class="key keypos-20">
 <rect rx="6" ry="6" x="-38" y="-38" width="77" height="77" class="key"/>
@@ -806,11 +827,11 @@ path.combo {
 </g>
 <g transform="translate(200, 50)" class="key keypos-2">
 <rect rx="6" ry="6" x="-38" y="-38" width="77" height="77" class="key"/>
-<text x="0" y="0" class="key tap">Ctl+Y</text>
+<use href="#mdi:redo" xlink:href="#mdi:redo" x="-11" y="-11" height="22" width="22.0" class="key tap glyph mdi:redo"/>
 </g>
 <g transform="translate(280, 40)" class="key keypos-3">
 <rect rx="6" ry="6" x="-38" y="-38" width="77" height="77" class="key"/>
-<text x="0" y="0" class="key tap">Ctl+Z</text>
+<use href="#mdi:undo" xlink:href="#mdi:undo" x="-11" y="-11" height="22" width="22.0" class="key tap glyph mdi:undo"/>
 </g>
 <g transform="translate(360, 50)" class="key keypos-4">
 <rect rx="6" ry="6" x="-38" y="-38" width="77" height="77" class="key"/>
@@ -818,7 +839,7 @@ path.combo {
 </g>
 <g transform="translate(440, 60)" class="key keypos-5">
 <rect rx="6" ry="6" x="-38" y="-38" width="77" height="77" class="key"/>
-<text x="0" y="0" class="key tap">Ctl+X</text>
+<use href="#mdi:content-cut" xlink:href="#mdi:content-cut" x="-11" y="-11" height="22" width="22.0" class="key tap glyph mdi:content-cut"/>
 </g>
 <g transform="translate(760, 60)" class="key keypos-6">
 <rect rx="6" ry="6" x="-38" y="-38" width="77" height="77" class="key"/>
@@ -862,11 +883,11 @@ path.combo {
 </g>
 <g transform="translate(360, 130)" class="key keypos-16">
 <rect rx="6" ry="6" x="-38" y="-38" width="77" height="77" class="key"/>
-<use href="#mdi:microsoft-windows" xlink:href="#mdi:microsoft-windows" x="-11" y="-11" height="22" width="22.0" class="key tap glyph mdi:microsoft-windows"/>
+<use href="#mdi:linux" xlink:href="#mdi:linux" x="-11" y="-11" height="22" width="22.0" class="key tap glyph mdi:linux"/>
 </g>
 <g transform="translate(440, 140)" class="key keypos-17">
 <rect rx="6" ry="6" x="-38" y="-38" width="77" height="77" class="key"/>
-<text x="0" y="0" class="key tap">Ctl+C</text>
+<use href="#mdi:content-copy" xlink:href="#mdi:content-copy" x="-11" y="-11" height="22" width="22.0" class="key tap glyph mdi:content-copy"/>
 </g>
 <g transform="translate(760, 140)" class="key keypos-18">
 <rect rx="6" ry="6" x="-38" y="-38" width="77" height="77" class="key"/>
@@ -910,13 +931,11 @@ path.combo {
 </g>
 <g transform="translate(360, 210)" class="key keypos-28">
 <rect rx="6" ry="6" x="-38" y="-38" width="77" height="77" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.5em">Sft+</tspan><tspan x="0" dy="1.0em">Gui+S</tspan>
-</text>
+<use href="#mdi:monitor-screenshot" xlink:href="#mdi:monitor-screenshot" x="-11" y="-11" height="22" width="22.0" class="key tap glyph mdi:monitor-screenshot"/>
 </g>
 <g transform="translate(440, 220)" class="key keypos-29">
 <rect rx="6" ry="6" x="-38" y="-38" width="77" height="77" class="key"/>
-<text x="0" y="0" class="key tap">Ctl+V</text>
+<use href="#mdi:content-paste" xlink:href="#mdi:content-paste" x="-11" y="-11" height="22" width="22.0" class="key tap glyph mdi:content-paste"/>
 </g>
 <g transform="translate(760, 220)" class="key keypos-30">
 <rect rx="6" ry="6" x="-38" y="-38" width="77" height="77" class="key"/>
@@ -1177,11 +1196,11 @@ path.combo {
 </g>
 <g transform="translate(200, 50)" class="key keypos-2">
 <rect rx="6" ry="6" x="-38" y="-38" width="77" height="77" class="key"/>
-<text x="0" y="0" class="key tap">Ctl+Y</text>
+<use href="#mdi:redo" xlink:href="#mdi:redo" x="-11" y="-11" height="22" width="22.0" class="key tap glyph mdi:redo"/>
 </g>
 <g transform="translate(280, 40)" class="key keypos-3">
 <rect rx="6" ry="6" x="-38" y="-38" width="77" height="77" class="key"/>
-<text x="0" y="0" class="key tap">Ctl+Z</text>
+<use href="#mdi:undo" xlink:href="#mdi:undo" x="-11" y="-11" height="22" width="22.0" class="key tap glyph mdi:undo"/>
 </g>
 <g transform="translate(360, 50)" class="key keypos-4">
 <rect rx="6" ry="6" x="-38" y="-38" width="77" height="77" class="key"/>
@@ -1189,7 +1208,7 @@ path.combo {
 </g>
 <g transform="translate(440, 60)" class="key keypos-5">
 <rect rx="6" ry="6" x="-38" y="-38" width="77" height="77" class="key"/>
-<text x="0" y="0" class="key tap">Ctl+X</text>
+<use href="#mdi:content-cut" xlink:href="#mdi:content-cut" x="-11" y="-11" height="22" width="22.0" class="key tap glyph mdi:content-cut"/>
 </g>
 <g transform="translate(760, 60)" class="key keypos-6">
 <rect rx="6" ry="6" x="-38" y="-38" width="77" height="77" class="key"/>
@@ -1234,11 +1253,11 @@ path.combo {
 </g>
 <g transform="translate(360, 130)" class="key keypos-16">
 <rect rx="6" ry="6" x="-38" y="-38" width="77" height="77" class="key"/>
-<use href="#mdi:microsoft-windows" xlink:href="#mdi:microsoft-windows" x="-11" y="-11" height="22" width="22.0" class="key tap glyph mdi:microsoft-windows"/>
+<use href="#mdi:linux" xlink:href="#mdi:linux" x="-11" y="-11" height="22" width="22.0" class="key tap glyph mdi:linux"/>
 </g>
 <g transform="translate(440, 140)" class="key keypos-17">
 <rect rx="6" ry="6" x="-38" y="-38" width="77" height="77" class="key"/>
-<text x="0" y="0" class="key tap">Ctl+C</text>
+<use href="#mdi:content-copy" xlink:href="#mdi:content-copy" x="-11" y="-11" height="22" width="22.0" class="key tap glyph mdi:content-copy"/>
 </g>
 <g transform="translate(760, 140)" class="key keypos-18">
 <rect rx="6" ry="6" x="-38" y="-38" width="77" height="77" class="key"/>
@@ -1258,7 +1277,7 @@ path.combo {
 </g>
 <g transform="translate(1080, 150)" class="key keypos-22">
 <rect rx="6" ry="6" x="-38" y="-38" width="77" height="77" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 83%">PrtScr</tspan></text>
+<use href="#mdi:printer-outline" xlink:href="#mdi:printer-outline" x="-11" y="-11" height="22" width="22.0" class="key tap glyph mdi:printer-outline"/>
 </g>
 <g transform="translate(1160, 150)" class="key keypos-23">
 <rect rx="6" ry="6" x="-38" y="-38" width="77" height="77" class="key"/>
@@ -1291,7 +1310,7 @@ path.combo {
 </g>
 <g transform="translate(440, 220)" class="key keypos-29">
 <rect rx="6" ry="6" x="-38" y="-38" width="77" height="77" class="key"/>
-<text x="0" y="0" class="key tap">Ctl+V</text>
+<use href="#mdi:content-paste" xlink:href="#mdi:content-paste" x="-11" y="-11" height="22" width="22.0" class="key tap glyph mdi:content-paste"/>
 </g>
 <g transform="translate(760, 220)" class="key keypos-30">
 <rect rx="6" ry="6" x="-38" y="-38" width="77" height="77" class="key"/>
@@ -1311,7 +1330,7 @@ path.combo {
 </g>
 <g transform="translate(1080, 230)" class="key keypos-34">
 <rect rx="6" ry="6" x="-38" y="-38" width="77" height="77" class="key"/>
-<use href="#mdi:stop-circle" xlink:href="#mdi:stop-circle" x="-11" y="-11" height="22" width="22.0" class="key tap glyph mdi:stop-circle"/>
+<use href="#mdi:stop" xlink:href="#mdi:stop" x="-11" y="-11" height="22" width="22.0" class="key tap glyph mdi:stop"/>
 </g>
 <g transform="translate(1160, 230)" class="key keypos-35">
 <rect rx="6" ry="6" x="-38" y="-38" width="77" height="77" class="key"/>
@@ -1557,7 +1576,7 @@ path.combo {
 </g>
 <g transform="translate(840, 50)" class="key keypos-7">
 <rect rx="6" ry="6" x="-38" y="-38" width="77" height="77" class="key"/>
-<text x="0" y="0" class="key tap">Ctl+Z</text>
+<use href="#mdi:undo" xlink:href="#mdi:undo" x="-11" y="-11" height="22" width="22.0" class="key tap glyph mdi:undo"/>
 <use href="#mdi:transfer-up" xlink:href="#mdi:transfer-up" x="-8" y="-34" height="16" width="16.0" class="key shifted glyph mdi:transfer-up"/>
 </g>
 <g transform="translate(920, 40)" class="key keypos-8">
@@ -1574,7 +1593,7 @@ path.combo {
 </g>
 <g transform="translate(1080, 70)" class="key keypos-10">
 <rect rx="6" ry="6" x="-38" y="-38" width="77" height="77" class="key"/>
-<text x="0" y="0" class="key tap">Ctl+V</text>
+<use href="#mdi:content-paste" xlink:href="#mdi:content-paste" x="-11" y="-11" height="22" width="22.0" class="key tap glyph mdi:content-paste"/>
 </g>
 <g transform="translate(1160, 70)" class="key keypos-11">
 <rect rx="6" ry="6" x="-38" y="-38" width="77" height="77" class="key"/>

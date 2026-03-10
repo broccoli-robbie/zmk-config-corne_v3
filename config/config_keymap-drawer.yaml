@@ -452,8 +452,8 @@ parse_config:
     "&kp LSHFT": $$mdi:apple-keyboard-shift$$
     "&kp LCTRL": $$mdi:apple-keyboard-control$$
     "&kp RCTRL": $$mdi:apple-keyboard-control$$
-    "&kp LGUI": $$mdi:microsoft-windows$$
-    "&kp RGUI": $$mdi:microsoft-windows$$
+    "&kp LGUI": $$mdi:linux$$
+    "&kp RGUI": $$mdi:linux$$
     "&kp LALT": $$mdi:apple-keyboard-option$$
     "&kp RALT": $$mdi:apple-keyboard-option$$
     "&kp RSHFT": $$mdi:apple-keyboard-shift$$
@@ -494,14 +494,12 @@ parse_config:
     DEL: $$mdi:backspace-reverse-outline$$
 
     # custom
-    "&kp LC(X)": $$mdi:content-cut$$
-    "&kp LC(C)": $$mdi:content-copy$$
-    "&kp LC(V)": $$mdi:content-paste$$
-    "&kp LC(Y)": $$mdi:redo$$
-    "&kp LC(Z)": $$mdi:undo$$
-    "&kp LS(LG(S))": $$mdi:monitor-screenshot$$
-    "&kp LS(TAB)": $$mdi:keyboard-tab-reverse$$
-    "&kp TAB": $$mdi:keyboard-tab$$
+    LC(X): $$mdi:content-cut$$
+    LC(C): $$mdi:content-copy$$
+    LC(V): $$mdi:content-paste$$
+    LC(Y): $$mdi:redo$$
+    LC(Z): $$mdi:undo$$
+    LS(LG(S)): $$mdi:monitor-screenshot$$
 
     # arrows
     UP: $$mdi:arrow-up-bold$$
@@ -519,19 +517,30 @@ parse_config:
     K_POWER: $$mdi:power-standby$$
     K_SLEEP: $$mdi:power-sleep$$
     K_LOCK: $$mdi:lock-outline$$
+    AL_LOCK: $$mdi:lock$$
     C_AL_LOGOFF: $$mdi:logout$$
     INS: Ins
     HOME: Home
     END: End
-    PSCRN: PrtScr
-    PAUSE_BREAK: Break
+    PSCRN: $$mdi:printer-outline$$
+    PAUSE_BREAK: $$mdi:format-page-break$$
+
+    # apps
     K_CALCULATOR: $$mdi:calculator$$
+    AL_MAIL: $$mdi:email-outline$$
+    AL_FILES: $$mdi:folder-multiple-outline$$
+    AL_CAL: $$mdi:calendar-month$$
+    AL_WORD: $$mdi:file-word-outline$$
+    AL_TEXT_EDITOR: $$mdi:text-box-edit-outline$$
+    AL_SHEET: $$mdi:file-excel-outline$$
+    AL_IM: $$mdi:message-text-outline$$
+    AL_VOICEMAIL: $$mdi:voicemail$$
 
     # media
     K_PP: $$mdi:play-pause$$
     K_NEXT: $$mdi:skip-next$$
     K_PREV: $$mdi:skip-previous$$
-    K_STOP: $$mdi:stop-circle$$
+    K_STOP: $$mdi:stop$$
     K_VOL_UP: $$mdi:volume-plus$$
     K_VOL_DN: $$mdi:volume-minus$$
     K_MUTE: $$mdi:volume-mute$$

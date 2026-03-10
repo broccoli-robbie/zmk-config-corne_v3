@@ -17,10 +17,10 @@ layers:
   - {t: A, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: S, h: '$$mdi:apple-keyboard-control$$'}
   - {t: D, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: F, h: '$$mdi:microsoft-windows$$'}
+  - {t: F, h: '$$mdi:linux$$'}
   - G
   - H
-  - {t: J, h: '$$mdi:microsoft-windows$$'}
+  - {t: J, h: '$$mdi:linux$$'}
   - {t: K, h: '$$mdi:apple-keyboard-option$$'}
   - {t: L, h: '$$mdi:apple-keyboard-control$$'}
   - {t: ;, h: '$$mdi:apple-keyboard-shift$$'}
@@ -46,10 +46,10 @@ layers:
   Number:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:apple-keyboard-shift$$', h: sticky}
-  - Ctl+Y
-  - Ctl+Z
+  - $$mdi:redo$$
+  - $$mdi:undo$$
   - $$mdi:backspace$$
-  - Ctl+X
+  - $$mdi:content-cut$$
   - '*'
   - '7'
   - '8'
@@ -60,8 +60,8 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
-  - $$mdi:microsoft-windows$$
-  - Ctl+C
+  - $$mdi:linux$$
+  - $$mdi:content-copy$$
   - +
   - '4'
   - '5'
@@ -72,8 +72,8 @@ layers:
   - Gui+$$mdi:keyboard-tab$$
   - $$mdi:keyboard-tab-reverse$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - Sft+Gui+S
-  - Ctl+V
+  - $$mdi:monitor-screenshot$$
+  - $$mdi:content-paste$$
   - $
   - '1'
   - '2'
@@ -132,10 +132,10 @@ layers:
   Cursor:
   - $$mdi:keyboard-esc$$
   - {t: '$$mdi:apple-keyboard-shift$$', h: sticky}
-  - Ctl+Y
-  - Ctl+Z
+  - $$mdi:redo$$
+  - $$mdi:undo$$
   - $$mdi:backspace$$
-  - Ctl+X
+  - $$mdi:content-cut$$
   - Home
   - $$mdi:transfer-down$$
   - $$mdi:transfer-up$$
@@ -146,25 +146,25 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
-  - $$mdi:microsoft-windows$$
-  - Ctl+C
+  - $$mdi:linux$$
+  - $$mdi:content-copy$$
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
-  - PrtScr
+  - $$mdi:printer-outline$$
   - KP NLCK
   - {t: '&extend_line_right', s: '&extend_line_left'}
   - Ctl+A
   - {t: '&select_line_right', s: '&select_line_left'}
   - {t: '&select_word_right', s: '&select_word_left'}
   - FIND
-  - Ctl+V
+  - $$mdi:content-paste$$
   - $$mdi:skip-previous$$
   - $$mdi:volume-minus$$
   - $$mdi:volume-plus$$
   - $$mdi:skip-next$$
-  - $$mdi:stop-circle$$
+  - $$mdi:stop$$
   - SLCK
   - {t: Base, h: toggle, type: held}
   - ''
@@ -223,10 +223,10 @@ layers:
   - {t: '&replace', s: '&replace_shift'}
   - ''
   - '&vim_y'
-  - {t: Ctl+Z, s: '$$mdi:transfer-up$$'}
+  - {t: '$$mdi:undo$$', s: '$$mdi:transfer-up$$'}
   - {t: Base, h: toggle, s: '&insert_line'}
   - {t: '&new_line_below', s: '&new_line_above'}
-  - Ctl+V
+  - $$mdi:content-paste$$
   - ''
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '&append_word', s: '&append_line'}
