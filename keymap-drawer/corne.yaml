@@ -106,7 +106,7 @@ layers:
   - '}'
   - ']'
   - +
-  - AL EMAIL
+  - $$mdi:email-outline$$
   - $$mdi:calendar-month$$
   - $$mdi:message-text-outline$$
   - '-'
@@ -220,18 +220,18 @@ layers:
   - $$mdi:keyboard-esc$$
   - Ctl+$$mdi:arrow-right-bold$$
   - '&end_word'
-  - {t: '&replace', s: '&replace_shift'}
+  - Replace
   - ''
-  - '&vim_y'
-  - {t: '$$mdi:undo$$', s: '$$mdi:transfer-up$$'}
-  - {t: Base, h: toggle, s: '&insert_line'}
+  - Yank
+  - Undo
+  - Insert
   - {t: '&new_line_below', s: '&new_line_above'}
   - $$mdi:content-paste$$
   - ''
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '&append_word', s: '&append_line'}
-  - {t: '&substitute_char', s: '&substitute_line'}
-  - {t: '&dd', s: '$$mdi:transfer-down$$'}
+  - Append
+  - Substitute
+  - Delete
   - ''
   - {t: '&gg', s: Ctl+End}
   - $$mdi:arrow-left-bold$$
@@ -243,7 +243,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - ''
   - $$mdi:backspace-reverse-outline$$
-  - {t: '&change_line', s: '&change_line_end'}
+  - Change
   - ''
   - Ctl+$$mdi:arrow-left-bold$$
   - ''

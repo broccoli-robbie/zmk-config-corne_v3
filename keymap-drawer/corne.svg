@@ -63,6 +63,9 @@
 <svg id="mdi:content-paste">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-content-paste" viewBox="0 0 24 24"><path d="M19,20H5V4H7V7H17V4H19M12,2A1,1 0 0,1 13,3A1,1 0 0,1 12,4A1,1 0 0,1 11,3A1,1 0 0,1 12,2M19,2H14.82C14.4,0.84 13.3,0 12,0C10.7,0 9.6,0.84 9.18,2H5A2,2 0 0,0 3,4V20A2,2 0 0,0 5,22H19A2,2 0 0,0 21,20V4A2,2 0 0,0 19,2Z" /></svg>
 </svg>
+<svg id="mdi:email-outline">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-email-outline" viewBox="0 0 24 24"><path d="M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6M20 6L12 11L4 6H20M20 18H4V8L12 13L20 8V18Z" /></svg>
+</svg>
 <svg id="mdi:file-excel-outline">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-file-excel-outline" viewBox="0 0 24 24"><path d="M14 2H6C4.89 2 4 2.9 4 4V20C4 21.11 4.89 22 6 22H18C19.11 22 20 21.11 20 20V8L14 2M18 20H6V4H13V9H18V20M12.9 14.5L15.8 19H14L12 15.6L10 19H8.2L11.1 14.5L8.2 10H10L12 13.4L14 10H15.8L12.9 14.5Z" /></svg>
 </svg>
@@ -1123,9 +1126,7 @@ path.combo {
 </g>
 <g transform="translate(840, 130)" class="key keypos-19">
 <rect rx="6" ry="6" x="-38" y="-38" width="77" height="77" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.5em">AL</tspan><tspan x="0" dy="1.0em">EMAIL</tspan>
-</text>
+<use href="#mdi:email-outline" xlink:href="#mdi:email-outline" x="-11" y="-11" height="22" width="22.0" class="key tap glyph mdi:email-outline"/>
 </g>
 <g transform="translate(920, 120)" class="key keypos-20">
 <rect rx="6" ry="6" x="-38" y="-38" width="77" height="77" class="key"/>
@@ -1605,27 +1606,22 @@ path.combo {
 </g>
 <g transform="translate(360, 50)" class="key keypos-4">
 <rect rx="6" ry="6" x="-38" y="-38" width="77" height="77" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 62%">&amp;replace</tspan></text>
-<text x="0" y="-34" class="key shifted"><tspan style="font-size: 62%">&amp;replac…</tspan></text>
+<text x="0" y="0" class="key tap"><tspan style="font-size: 71%">Replace</tspan></text>
 </g>
 <g transform="translate(440, 60)" class="key keypos-5">
 <rect rx="6" ry="6" x="-38" y="-38" width="77" height="77" class="key"/>
 </g>
 <g transform="translate(760, 60)" class="key keypos-6">
 <rect rx="6" ry="6" x="-38" y="-38" width="77" height="77" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 83%">&amp;vim_y</tspan></text>
+<text x="0" y="0" class="key tap">Yank</text>
 </g>
 <g transform="translate(840, 50)" class="key keypos-7">
 <rect rx="6" ry="6" x="-38" y="-38" width="77" height="77" class="key"/>
-<use href="#mdi:undo" xlink:href="#mdi:undo" x="-11" y="-11" height="22" width="22.0" class="key tap glyph mdi:undo"/>
-<use href="#mdi:transfer-up" xlink:href="#mdi:transfer-up" x="-8" y="-34" height="16" width="16.0" class="key shifted glyph mdi:transfer-up"/>
+<text x="0" y="0" class="key tap">Undo</text>
 </g>
 <g transform="translate(920, 40)" class="key keypos-8">
 <rect rx="6" ry="6" x="-38" y="-38" width="77" height="77" class="key"/>
-<a href="#Base">
-<text x="0" y="0" class="key tap layer-activator">Base</text>
-</a><text x="0" y="34" class="key hold"><tspan style="font-size: 83%">toggle</tspan></text>
-<text x="0" y="-34" class="key shifted"><tspan style="font-size: 62%">&amp;insert…</tspan></text>
+<text x="0" y="0" class="key tap"><tspan style="font-size: 83%">Insert</tspan></text>
 </g>
 <g transform="translate(1000, 50)" class="key keypos-9">
 <rect rx="6" ry="6" x="-38" y="-38" width="77" height="77" class="key"/>
@@ -1645,18 +1641,15 @@ path.combo {
 </g>
 <g transform="translate(120, 150)" class="key keypos-13">
 <rect rx="6" ry="6" x="-38" y="-38" width="77" height="77" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 62%">&amp;append…</tspan></text>
-<text x="0" y="-34" class="key shifted"><tspan style="font-size: 62%">&amp;append…</tspan></text>
+<text x="0" y="0" class="key tap"><tspan style="font-size: 83%">Append</tspan></text>
 </g>
 <g transform="translate(200, 130)" class="key keypos-14">
 <rect rx="6" ry="6" x="-38" y="-38" width="77" height="77" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 62%">&amp;substi…</tspan></text>
-<text x="0" y="-34" class="key shifted"><tspan style="font-size: 62%">&amp;substi…</tspan></text>
+<text x="0" y="0" class="key tap"><tspan style="font-size: 62%">Substit…</tspan></text>
 </g>
 <g transform="translate(280, 120)" class="key keypos-15">
 <rect rx="6" ry="6" x="-38" y="-38" width="77" height="77" class="key"/>
-<text x="0" y="0" class="key tap">&amp;dd</text>
-<use href="#mdi:transfer-down" xlink:href="#mdi:transfer-down" x="-8" y="-34" height="16" width="16.0" class="key shifted glyph mdi:transfer-down"/>
+<text x="0" y="0" class="key tap"><tspan style="font-size: 83%">Delete</tspan></text>
 </g>
 <g transform="translate(360, 130)" class="key keypos-16">
 <rect rx="6" ry="6" x="-38" y="-38" width="77" height="77" class="key"/>
@@ -1701,8 +1694,7 @@ path.combo {
 </g>
 <g transform="translate(280, 200)" class="key keypos-27">
 <rect rx="6" ry="6" x="-38" y="-38" width="77" height="77" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 62%">&amp;change…</tspan></text>
-<text x="0" y="-34" class="key shifted"><tspan style="font-size: 62%">&amp;change…</tspan></text>
+<text x="0" y="0" class="key tap"><tspan style="font-size: 83%">Change</tspan></text>
 </g>
 <g transform="translate(360, 210)" class="key keypos-28">
 <rect rx="6" ry="6" x="-38" y="-38" width="77" height="77" class="key"/>

@@ -466,6 +466,16 @@ parse_config:
     "&extend_line": Extend Line
     "&extend_word": Extend Word
 
+    # vim
+    "&vim_y": Yank
+    "&vim_d": Delete
+    "&vim_s": Substitute
+    "&vim_a": Append
+    "&vim_u": Undo
+    "&vim_i": Insert
+    "&vim_c": Change
+    "&vim_r": Replace
+
   zmk_keycode_map:
     # modifiers
     LCTRL: $$mdi:apple-keyboard-control$$
@@ -543,7 +553,7 @@ parse_config:
 
     # apps
     K_CALCULATOR: $$mdi:calculator$$
-    C_AL_MAIL: $$mdi:email-outline$$
+    C_AL_EMAIL: $$mdi:email-outline$$
     C_AL_FILES: $$mdi:folder-multiple-outline$$
     C_AL_CAL: $$mdi:calendar-month$$
     C_AL_WORD: $$mdi:file-word-outline$$
