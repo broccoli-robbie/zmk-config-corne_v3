@@ -25,7 +25,7 @@ layers:
   - {t: L, h: '$$mdi:apple-keyboard-control$$'}
   - {t: ;, h: '$$mdi:apple-keyboard-shift$$'}
   - ''''
-  - Shift Tab
+  - $$mdi:keyboard-tab-reverse$$
   - Z
   - X
   - C
@@ -70,7 +70,7 @@ layers:
   - ^
   - $$mdi:apple-keyboard-caps$$
   - Gui+$$mdi:keyboard-tab$$
-  - Shift Tab
+  - $$mdi:keyboard-tab-reverse$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - Sft+Gui+S
   - Ctl+V
@@ -118,7 +118,7 @@ layers:
   - '|'
   - \
   - ''''
-  - CALCULATOR
+  - $$mdi:calculator$$
   - AL TEXT EDITOR
   - AL WORD
   - '"'
@@ -140,7 +140,7 @@ layers:
   - $$mdi:transfer-down$$
   - $$mdi:transfer-up$$
   - End
-  - Insert
+  - Ins
   - APP
   - {t: '&extend_word_right', s: '&extend_word_left'}
   - $$mdi:apple-keyboard-shift$$
@@ -160,18 +160,18 @@ layers:
   - {t: '&select_word_right', s: '&select_word_left'}
   - FIND
   - Ctl+V
-  - PREV
-  - VOL DN
-  - VOL UP
-  - NEXT
-  - STOP
+  - $$mdi:skip-previous$$
+  - $$mdi:volume-minus$$
+  - $$mdi:volume-plus$$
+  - $$mdi:skip-next$$
+  - $$mdi:stop-circle$$
   - SLCK
   - {t: Base, h: toggle, type: held}
   - ''
   - ''
   - {t: Base, h: toggle}
-  - PP
-  - MUTE
+  - $$mdi:play-pause$$
+  - $$mdi:volume-mute$$
   Game:
   - T
   - $$mdi:keyboard-tab$$
@@ -260,9 +260,9 @@ layers:
   - ''
   System:
   - Ctl+Sft+$$mdi:keyboard-esc$$
-  - AL LOGOFF
-  - LOCK
-  - SLEEP
+  - $$mdi:logout$$
+  - $$mdi:lock-outline$$
+  - $$mdi:power-sleep$$
   - PWR
   - Alt+Ctl+$$mdi:backspace-reverse-outline$$
   - F18
@@ -271,7 +271,7 @@ layers:
   - F9
   - F12
   - F15
-  - $$mdi:lock$$
+  - AL LOCK
   - BRI MIN
   - BRI DN
   - BRI UP

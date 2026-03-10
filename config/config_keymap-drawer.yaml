@@ -13,7 +13,7 @@ draw_config:
   # combo box dimensions
   combo_w: 30
   combo_h: 30
-  
+
   # padding from the edge of cap to top & bottom legends
   small_pad: 4
 
@@ -27,7 +27,7 @@ draw_config:
 
   # gap between ortho halves
   split_gap: 20
-  
+
   append_colon_to_layer_header: false
 
   # shrink legend font sizes wider than this many chars
@@ -43,7 +43,7 @@ draw_config:
     svg path {
         fill: inherit;
     }
-    
+
     svg.keymap {
       /*
        * ====================
@@ -439,118 +439,25 @@ parse_config:
   trans_legend:
     tap: $$mdi:transfer$$
     type: trans
-    
+
   raw_binding_map:
-    '&sys_reset': Reset
-    '&bootloader': Boot
-    '&swapper': Win Next
-    '&caps_word': Caps Word
-    '&inv_qm': ¿
+    # bluetooth
+    "&bt BT_SEL 0": BT 1
+    "&bt BT_SEL 1": BT 2
+    "&bt BT_SEL 2": BT 3
+    "&bt BT_SEL 3": BT 4
+    "&bt BT_SEL 4": BT 5
 
-    '&kp LC(LG(LEFT))': Desk Left
-    '&kp LC(LG(RIGHT))': Desk Right
-    '&kp LC(TAB)': Tab Right
-    '&kp LC(LS(TAB))': Tab Left
-    '&kp LA(F4)': Win Close
-    '&kp LC(F4)': Tab Close
-    '&kp LS(TAB)': Shift Tab
-    '&kp LS(INS)': Paste
-    '&kp LG(L)': Lock
-
-    '&out OUT_USB': Out USB
-    '&out OUT_BLE': Out BLE
-
-    '&bt BT_SEL 0': BT 1
-    '&bt BT_SEL 1': BT 2
-    '&bt BT_SEL 2': BT 3
-    '&bt BT_SEL 3': BT 4
-    '&bt BT_SEL 4': BT 5
-
-    # Display
-    'DISPLAY_UP': {t: $$mdi:television-classic$$, h: $$mdi:arrow-up$$, type: tap_dance}
-    'DISPLAY_DOWN': {t: $$mdi:television-classic$$, h: $$mdi:arrow-down$$, type: tap_dance}
-    'DISPLAY_LEFT': {t: $$mdi:television-classic$$, h: $$mdi:arrow-left$$, type: tap_dance}
-    'DISPLAY_RIGHT': {t: $$mdi:television-classic$$, h: $$mdi:arrow-right$$, type: tap_dance}
-    'DISPLAY_SPACE': {t: $$mdi:television-classic$$, h: $$mdi:keyboard-space$$, type: tap_dance}
-
-
-    # Rgb
-    '&rgb_ug RGB_TOG': {t: $$mdi:led-on$$, h: $$mdi:toggle-switch$$, s: $$mdi:led-outline$$, type: toggle}
-    '&rgb_ug RGB_VAI': {t: $$mdi:led-on$$, s: $$tabler:brightness-up$$, type: sym_by_sym}
-    '&rgb_ug RGB_VAD': {t: $$mdi:led-outline$$, s: $$tabler:brightness-down$$, type: sym_by_sym}
-    '&rgb_ug RGB_BRD': {t: $$mdi:led-on$$, s: $$tabler:brightness-up$$, type: sym_by_sym}
-    '&rgb_ug RGB_BRI': {t: $$mdi:led-outline$$, s: $$tabler:brightness-down$$, type: sym_by_sym}
-    '&rgb_ug RGB_SAI': {t: $$mdi:led-outline$$, s: $$mdi:eyedropper$$, type: sym_by_sym}
-    '&rgb_ug RGB_SAD': {t: $$mdi:led-on$$, s: $$mdi:eyedropper$$, type: sym_by_sym}
-    '&rgb_ug RGB_HUI': {t: $$mdi:led-on$$, s: $$mdi:palette$$, type: sym_by_sym}
-    '&rgb_ug RGB_HUD': {t: $$mdi:led-outline$$, s: $$mdi:palette$$, type: sym_by_sym}
-    '&rgb_ug RGB_RMOD': {t: $$mdi:led-on$$, h: $$mdi:page-previous-outline$$, type: tap_dance}
-    '&rgb_ug RGB_MOD': {t: $$mdi:led-on$$, h: $$mdi:page-next-outline$$, type: tap_dance}
-    '&rgb_ug RGB_EFF': {t: $$mdi:led-on$$, h: $$mdi:page-previous-outline$$, type: tap_dance}
-    '&rgb_ug RGB_EFR': {t: $$mdi:led-on$$, h: $$mdi:page-next-outline$$, type: tap_dance}
-    '&rgb_ug RGB_SPI': {t: $$mdi:led-on$$, h: $$mdi:speedometer$$, type: sym_by_sym}
-    '&rgb_ug RGB_SPD': {t: $$mdi:led-on$$, h: $$mdi:speedometer-slow$$, type: sym_by_sym}
-    '&rgb_ug RGB_UP': {t: $$mdi:led-on$$, h: $$mdi:arrow-up$$, type: tap_dance}
-    '&rgb_ug RGB_DOWN': {t: $$mdi:led-on$$, h: $$mdi:arrow-down$$, type: tap_dance}
-    '&rgb_ug RGB_LEFT': {t: $$mdi:led-on$$, h: $$mdi:arrow-left$$, type: tap_dance}
-    '&rgb_ug RGB_RIGHT': {t: $$mdi:led-on$$, h: $$mdi:arrow-right$$, type: tap_dance}
-    '&rgb_ug RGB_SPACE': {t: $$mdi:led-on$$, h: $$mdi:keyboard-space$$, type: tap_dance}
-    '&rgb_ug RGB_COLOR_HSB(0,0,100)': {t: $$mdi:led-on$$, h: $$mdi:palette$$, type: tap_dance}
-    '&rgb_ug RGB_COLOR_HSB(224,100,100)': {t: $$mdi:led-on$$, h: $$mdi:palette$$, type: tap_dance}
-
-    # Mouse
-    'U_WH_L': {t: $$mdi:mouse-outline$$, h: $$mdi:arrow-left$$, type: tap_dance}
-    'U_WH_R': {t: $$mdi:mouse-outline$$, h: $$mdi:arrow-right$$, type: tap_dance}
-    'U_WH_U': {t: $$mdi:mouse-outline$$, h: $$mdi:arrow-up$$, type: tap_dance}
-    'U_WH_D': {t: $$mdi:mouse-outline$$, h: $$mdi:arrow-down$$, type: tap_dance}
-    'U_MS_L': {t: $$mdi:mouse$$, h: $$mdi:arrow-left$$, type: tap_dance}
-    'U_MS_D': {t: $$mdi:mouse$$, h: $$mdi:arrow-down$$, type: tap_dance}
-    'U_MS_R': {t: $$mdi:mouse$$, h: $$mdi:arrow-right$$, type: tap_dance}
-    'U_MS_U': {t: $$mdi:mouse$$, h: $$mdi:arrow-up$$, type: tap_dance}
-    'CLICK_LEFT': $$mdi:cursor-default-click$$
-    'CLICK_RIGHT': $$mdi:cursor-default-click-outline$$
-    'CLICK_MIDDLE': $$mdi:cursor-default-click-outline$$
-    # '&mmv MOVE_UP': Mouse ↑
-    # '&mmv MOVE_DOWN': Mouse ↓
-    # '&mmv MOVE_LEFT': Mouse ←
-    # '&mmv MOVE_RIGHT': Mouse →
-
-    # '&msc SCRL_UP': Scroll ↑
-    # '&msc SCRL_DOWN': Scroll ↓
-    # '&msc SCRL_LEFT': Scroll ←
-    # '&msc SCRL_RIGHT': Scroll →
-
-    # '&mkp MCLK': Middle Click
-    # '&mkp MB4': Back Click
-    # '&mkp MB5': Forward Click
-
-
-    # layers
-    'MEDIA_ESC': {t: $$mdi:keyboard-esc$$, h: $$mdi:music-note$$}
-    'MOUSE_TAB': {t: $$mdi:keyboard-tab$$, h: $$mdi:mouse$$}
-    'NUMBER_SPACE': {t: $$mdi:keyboard-space$$, h: $$mdi:numeric$$}
-    '&mo _FUNCTION': $$mdi:function-variant$$
-    '&mo _CONFIG': $$mdi:cog$$
-    '&mo _LOCK': $$mdi:lock$$
-    '&mo _SYMBOL': $$mdi:symbol$$
-    '&mo _DISPLAY': $$mdi:television-classic$$
-    '&mo _OLED': $$mdi:television-classic$$
-    '&mo _LINUX': $$mdi:linux$$
-    '&mo _RGB': $$mdi:led-on$$
-    'DE_CAPS': $$mdi:keyboard-caps$$
-    'TAB': $$mdi:keyboard-tab$$
-    '&mt LSHFT COMMA': {t: $$mdi:google-downasaur$$, h: $$mdi:apple-keyboard-shift$$, type: tap_dance}
-
-    # CONTROL CMD/WINDOWS SHIFT ALT/META/OPTION
-    '&kp LSHFT': $$mdi:apple-keyboard-shift$$
-    '&kp LCTRL': $$mdi:apple-keyboard-control$$
-    '&kp RCTRL': $$mdi:apple-keyboard-control$$
-    '&kp LGUI': $$mdi:microsoft-windows$$
-    '&kp RGUI': $$mdi:microsoft-windows$$
-    '&kp LALT': $$mdi:apple-keyboard-option$$
-    '&kp RALT': $$mdi:apple-keyboard-option$$
-    '&kp RSHFT': $$mdi:apple-keyboard-shift$$
-    '&kp BSPC': $$mdi:backspace$$
+    # modifiers
+    "&kp LSHFT": $$mdi:apple-keyboard-shift$$
+    "&kp LCTRL": $$mdi:apple-keyboard-control$$
+    "&kp RCTRL": $$mdi:apple-keyboard-control$$
+    "&kp LGUI": $$mdi:microsoft-windows$$
+    "&kp RGUI": $$mdi:microsoft-windows$$
+    "&kp LALT": $$mdi:apple-keyboard-option$$
+    "&kp RALT": $$mdi:apple-keyboard-option$$
+    "&kp RSHFT": $$mdi:apple-keyboard-shift$$
+    "&kp BSPC": $$mdi:backspace$$
 
   zmk_keycode_map:
     # modifiers
@@ -586,6 +493,16 @@ parse_config:
     DELETE: $$mdi:backspace-reverse-outline$$
     DEL: $$mdi:backspace-reverse-outline$$
 
+    # custom
+    "&kp LC(X)": $$mdi:content-cut$$
+    "&kp LC(C)": $$mdi:content-copy$$
+    "&kp LC(V)": $$mdi:content-paste$$
+    "&kp LC(Y)": $$mdi:redo$$
+    "&kp LC(Z)": $$mdi:undo$$
+    "&kp LS(LG(S))": $$mdi:monitor-screenshot$$
+    "&kp LS(TAB)": $$mdi:keyboard-tab-reverse$$
+    "&kp TAB": $$mdi:keyboard-tab$$
+
     # arrows
     UP: $$mdi:arrow-up-bold$$
     DOWN: $$mdi:arrow-down-bold$$
@@ -598,90 +515,89 @@ parse_config:
     CAPSLOCK: $$mdi:apple-keyboard-caps$$
     CAPS: $$mdi:apple-keyboard-caps$$
 
-    # sound
-    C_MUTE: $$mdi:volume-off$$
-    C_VOL_UP: $$mdi:volume-high$$
-    C_VOL_DN: $$mdi:volume-low$$
-    
-    # media
-    C_NEXT: $$mdi:skip-next$$
-    C_PREV: $$mdi:skip-previous$$
-    C_PP: $$mdi:play-pause$$
-
     # system
-    C_POWER: $$mdi:power-standby$$
-    C_AL_LOCK: $$mdi:lock$$
-    K_CANCEL: $$mdi:close-box$$
-    
-    INS: Insert
+    K_POWER: $$mdi:power-standby$$
+    K_SLEEP: $$mdi:power-sleep$$
+    K_LOCK: $$mdi:lock-outline$$
+    C_AL_LOGOFF: $$mdi:logout$$
+    INS: Ins
     HOME: Home
     END: End
     PSCRN: PrtScr
     PAUSE_BREAK: Break
-    C_AL_CALC: Calc
-    
-    # symbols
-    AMPERSAND: '&'
-    AMPS: '&'
+    K_CALCULATOR: $$mdi:calculator$$
+
+    # media
+    K_PP: $$mdi:play-pause$$
+    K_NEXT: $$mdi:skip-next$$
+    K_PREV: $$mdi:skip-previous$$
+    K_STOP: $$mdi:stop-circle$$
+    K_VOL_UP: $$mdi:volume-plus$$
+    K_VOL_DN: $$mdi:volume-minus$$
+    K_MUTE: $$mdi:volume-mute$$
+
+    # defaults
+    AMPERSAND: "&"
+    AMPS: "&"
     APOS: "'"
     APOSTROPHE: "'"
-    ASTERISK: '*'
-    ASTRK: '*'
-    AT: '@'
-    AT_SIGN: '@'
+    ASTERISK: "*"
+    ASTRK: "*"
+    AT: "@"
+    AT_SIGN: "@"
     BACKSLASH: \
     BSLH: \
     CARET: ^
-    COLON: ':'
-    COMMA: ','
+    COLON: ":"
+    COMMA: ","
     DLLR: $
     DOLLAR: $
     DOT: .
     DOUBLE_QUOTES: '"'
     DQT: '"'
-    EQUAL: '='
-    EXCL: '!'
-    EXCLAMATION: '!'
+    EQUAL: "="
+    EXCL: "!"
+    EXCLAMATION: "!"
     FSLH: /
-    GRAVE: '`'
-    GREATER_THAN: '>'
-    GT: '>'
-    HASH: '#'
-    LBKT: '['
-    LBRC: '{'
-    LEFT_BRACE: '{'
-    LEFT_BRACKET: '['
+    GRAVE: "`"
+    GREATER_THAN: ">"
+    GT: ">"
+    HASH: "#"
+    LBKT: "["
+    LBRC: "{"
+    LEFT_BRACE: "{"
+    LEFT_BRACKET: "["
     LEFT_PARENTHESIS: (
     LESS_THAN: <
     LPAR: (
     LT: <
-    MINUS: '-'
+    MINUS: "-"
     NON_US_BACKSLASH: \
-    NON_US_BSLH: '|'
-    NON_US_HASH: '#'
-    NUHS: '#'
-    PERCENT: '%'
+    NON_US_BSLH: "|"
+    NON_US_HASH: "#"
+    NUHS: "#"
+    PERCENT: "%"
     PERIOD: .
-    PIPE: '|'
-    PIPE2: '|'
+    PIPE: "|"
+    PIPE2: "|"
     PLUS: +
-    POUND: '#'
-    PRCNT: '%'
-    QMARK: '?'
-    QUESTION: '?'
-    RBKT: ']'
-    RBRC: '}'
-    RIGHT_BRACE: '}'
-    RIGHT_BRACKET: ']'
+    POUND: "#"
+    PRCNT: "%"
+    QMARK: "?"
+    QUESTION: "?"
+    RBKT: "]"
+    RBRC: "}"
+    RIGHT_BRACE: "}"
+    RIGHT_BRACKET: "]"
     RIGHT_PARENTHESIS: )
     RPAR: )
     SEMI: ;
     SEMICOLON: ;
-    SINGLE_QUOTE: ''''
+    SINGLE_QUOTE: "'"
     SLASH: /
-    SQT: ''''
-    STAR: '*'
-    TILDE: '~'
-    TILDE2: '~'
+    SQT: "'"
+    STAR: "*"
+    TILDE: "~"
+    TILDE2: "~"
     UNDER: _
     UNDERSCORE: _
