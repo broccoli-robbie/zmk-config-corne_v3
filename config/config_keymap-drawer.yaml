@@ -442,6 +442,7 @@ parse_config:
 
   raw_binding_map:
     # bluetooth
+    "&bt BT_CLR": $$mdi:bluetooth$$
     "&bt BT_SEL 0": BT 1
     "&bt BT_SEL 1": BT 2
     "&bt BT_SEL 2": BT 3
@@ -458,6 +459,12 @@ parse_config:
     "&kp RALT": $$mdi:apple-keyboard-option$$
     "&kp RSHFT": $$mdi:apple-keyboard-shift$$
     "&kp BSPC": $$mdi:backspace$$
+
+    # cursor
+    "&select_line": Select Line
+    "&select_word": Selext Word
+    "&extend_line": Extend Line
+    "&extend_word": Extend Word
 
   zmk_keycode_map:
     # modifiers
@@ -494,12 +501,14 @@ parse_config:
     DEL: $$mdi:backspace-reverse-outline$$
 
     # custom
+    LC(A): $$mdi:select-all$$
     LC(X): $$mdi:content-cut$$
     LC(C): $$mdi:content-copy$$
     LC(V): $$mdi:content-paste$$
     LC(Y): $$mdi:redo$$
     LC(Z): $$mdi:undo$$
     LS(LG(S)): $$mdi:monitor-screenshot$$
+    K_FIND: $$mdi:find-replace$$
 
     # arrows
     UP: $$mdi:arrow-up-bold$$
@@ -514,10 +523,10 @@ parse_config:
     CAPS: $$mdi:apple-keyboard-caps$$
 
     # system
-    K_POWER: $$mdi:power-standby$$
+    K_PWR: $$mdi:power-standby$$
     K_SLEEP: $$mdi:power-sleep$$
     K_LOCK: $$mdi:lock-outline$$
-    AL_LOCK: $$mdi:lock$$
+    C_AL_LOCK: $$mdi:lock$$
     C_AL_LOGOFF: $$mdi:logout$$
     INS: Ins
     HOME: Home
@@ -525,16 +534,23 @@ parse_config:
     PSCRN: $$mdi:printer-outline$$
     PAUSE_BREAK: $$mdi:format-page-break$$
 
+    # brightness
+    C_BRI_MIN: $$mdi:brightness-1$$
+    C_BRI_DN: $$mdi:brightness-4$$
+    C_BRI_UP: $$mdi:brightness-6$$
+    C_BRI_MAX: $$mdi:brightness-7$$
+    C_BRI_AUTO: $$mdi:brightness-auto$$
+
     # apps
     K_CALCULATOR: $$mdi:calculator$$
-    AL_MAIL: $$mdi:email-outline$$
-    AL_FILES: $$mdi:folder-multiple-outline$$
-    AL_CAL: $$mdi:calendar-month$$
-    AL_WORD: $$mdi:file-word-outline$$
-    AL_TEXT_EDITOR: $$mdi:text-box-edit-outline$$
-    AL_SHEET: $$mdi:file-excel-outline$$
-    AL_IM: $$mdi:message-text-outline$$
-    AL_VOICEMAIL: $$mdi:voicemail$$
+    C_AL_MAIL: $$mdi:email-outline$$
+    C_AL_FILES: $$mdi:folder-multiple-outline$$
+    C_AL_CAL: $$mdi:calendar-month$$
+    C_AL_WORD: $$mdi:file-word-outline$$
+    C_AL_TEXT_EDITOR: $$mdi:text-box-edit-outline$$
+    C_AL_SHEET: $$mdi:file-excel-outline$$
+    C_AL_IM: $$mdi:message-text-outline$$
+    C_AL_VOICEMAIL: $$mdi:voicemail$$
 
     # media
     K_PP: $$mdi:play-pause$$

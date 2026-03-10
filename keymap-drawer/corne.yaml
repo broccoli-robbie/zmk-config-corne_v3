@@ -94,9 +94,9 @@ layers:
   - $
   - '%'
   - ;
-  - AL FILES
-  - AL VOICEMAIL
-  - AL SHEET
+  - $$mdi:folder-multiple-outline$$
+  - $$mdi:voicemail$$
+  - $$mdi:file-excel-outline$$
   - ':'
   - CLEAR
   - '['
@@ -107,8 +107,8 @@ layers:
   - ']'
   - +
   - AL EMAIL
-  - AL CAL
-  - AL IM
+  - $$mdi:calendar-month$$
+  - $$mdi:message-text-outline$$
   - '-'
   - MENU
   - '`'
@@ -119,8 +119,8 @@ layers:
   - \
   - ''''
   - $$mdi:calculator$$
-  - AL TEXT EDITOR
-  - AL WORD
+  - $$mdi:text-box-edit-outline$$
+  - $$mdi:file-word-outline$$
   - '"'
   - SELECT
   - <
@@ -142,7 +142,7 @@ layers:
   - End
   - Ins
   - APP
-  - {t: '&extend_word_right', s: '&extend_word_left'}
+  - Extend Word
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
@@ -154,11 +154,11 @@ layers:
   - $$mdi:arrow-right-bold$$
   - $$mdi:printer-outline$$
   - KP NLCK
-  - {t: '&extend_line_right', s: '&extend_line_left'}
-  - Ctl+A
-  - {t: '&select_line_right', s: '&select_line_left'}
-  - {t: '&select_word_right', s: '&select_word_left'}
-  - FIND
+  - Extend Line
+  - $$mdi:select-all$$
+  - Select Line
+  - Selext Word
+  - $$mdi:find-replace$$
   - $$mdi:content-paste$$
   - $$mdi:skip-previous$$
   - $$mdi:volume-minus$$
@@ -263,7 +263,7 @@ layers:
   - $$mdi:logout$$
   - $$mdi:lock-outline$$
   - $$mdi:power-sleep$$
-  - PWR
+  - $$mdi:power-standby$$
   - Alt+Ctl+$$mdi:backspace-reverse-outline$$
   - F18
   - F7
@@ -271,12 +271,12 @@ layers:
   - F9
   - F12
   - F15
-  - AL LOCK
-  - BRI MIN
-  - BRI DN
-  - BRI UP
-  - BRI MAX
-  - BRI AUTO
+  - $$mdi:lock$$
+  - $$mdi:brightness-1$$
+  - $$mdi:brightness-4$$
+  - $$mdi:brightness-6$$
+  - $$mdi:brightness-7$$
+  - $$mdi:brightness-auto$$
   - F17
   - F4
   - F5
@@ -288,7 +288,7 @@ layers:
   - BT 3
   - BT 2
   - BT 1
-  - BT CLR
+  - $$mdi:bluetooth$$
   - F16
   - F1
   - F2
