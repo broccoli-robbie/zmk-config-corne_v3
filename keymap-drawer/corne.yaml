@@ -84,7 +84,7 @@ layers:
   - {t: '=', type: held}
   - '>'
   - {t: Base, h: toggle}
-  - KP ENTER
+  - $$mdi:keyboard-return$$
   - '0'
   Symbol:
   - '~'

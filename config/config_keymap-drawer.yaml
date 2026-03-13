@@ -128,6 +128,7 @@ parse_config:
 
     # apps
     K_CALCULATOR: $$mdi:calculator$$
+    KP_ENTER: $$mdi:keyboard-return$$
     C_AL_EMAIL: $$mdi:email-outline$$
     C_AL_FILES: $$mdi:folder-multiple-outline$$
     C_AL_CAL: $$mdi:calendar-month$$
