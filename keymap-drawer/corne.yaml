@@ -98,7 +98,7 @@ layers:
   - $$mdi:voicemail$$
   - $$mdi:file-excel-outline$$
   - ':'
-  - CLEAR
+  - $$mdi:menu-left-outline$$
   - '['
   - '{'
   - (
@@ -110,7 +110,7 @@ layers:
   - $$mdi:calendar-month$$
   - $$mdi:message-text-outline$$
   - '-'
-  - MENU
+  - $$mdi:menu$$
   - '`'
   - ^
   - '&'
@@ -122,12 +122,12 @@ layers:
   - $$mdi:text-box-edit-outline$$
   - $$mdi:file-word-outline$$
   - '"'
-  - SELECT
+  - $$mdi:button-pointer$$
   - <
   - '='
   - '>'
   - {t: Base, h: toggle}
-  - {t: APP, type: held}
+  - {t: '$$mdi:application-settings-outline$$', type: held}
   - _
   Cursor:
   - $$mdi:keyboard-esc$$
@@ -141,7 +141,7 @@ layers:
   - $$mdi:transfer-up$$
   - End
   - Ins
-  - APP
+  - $$mdi:application-settings-outline$$
   - Extend Word
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-control$$
@@ -153,9 +153,9 @@ layers:
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
   - $$mdi:printer-outline$$
-  - KP NLCK
+  - $$mdi:lock-percent-outline$$
   - Extend Line
-  - $$mdi:select-all$$
+  - Select All
   - Select Line
   - Selext Word
   - $$mdi:find-replace$$
@@ -165,7 +165,7 @@ layers:
   - $$mdi:volume-plus$$
   - $$mdi:skip-next$$
   - $$mdi:stop$$
-  - SLCK
+  - $$mdi:arrow-vertical-lock$$
   - {t: Base, h: toggle, type: held}
   - ''
   - ''

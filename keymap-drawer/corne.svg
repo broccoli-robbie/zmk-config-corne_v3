@@ -12,6 +12,9 @@
 <svg id="mdi:apple-keyboard-shift">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-apple-keyboard-shift" viewBox="0 0 24 24"><path d="M15,18V12H17.17L12,6.83L6.83,12H9V18H15M12,4L22,14H17V20H7V14H2L12,4Z" /></svg>
 </svg>
+<svg id="mdi:application-settings-outline">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-application-settings-outline" viewBox="0 0 24 24"><path d="M21 0H3C1.9 0 1 .9 1 2V18C1 19.1 1.9 20 3 20H21C22.1 20 23 19.1 23 18V2C23 .9 22.1 0 21 0M21 18H3V4H21V18M7 22H9V24H7V22M11 22H13V24H11V22M15 22H17V24H15V22" /></svg>
+</svg>
 <svg id="mdi:arrow-down-bold">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-arrow-down-bold" viewBox="0 0 24 24"><path d="M9,4H15V12H19.84L12,19.84L4.16,12H9V4Z" /></svg>
 </svg>
@@ -23,6 +26,9 @@
 </svg>
 <svg id="mdi:arrow-up-bold">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-arrow-up-bold" viewBox="0 0 24 24"><path d="M15,20H9V12H4.16L12,4.16L19.84,12H15V20Z" /></svg>
+</svg>
+<svg id="mdi:arrow-vertical-lock">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-arrow-vertical-lock" viewBox="0 0 24 24"><path d="M18.8 11V9.5C18.8 8.1 17.4 7 16 7S13.2 8.1 13.2 9.5V11C12.6 11 12 11.6 12 12.2V15.7C12 16.4 12.6 17 13.2 17H18.7C19.4 17 20 16.4 20 15.8V12.3C20 11.6 19.4 11 18.8 11M17.5 11H14.5V9.5C14.5 8.7 15.2 8.2 16 8.2C16.8 8.2 17.5 8.7 17.5 9.5V11M9 6H12L8 2L4 6H7V18H4L8 22L12 18H9V6Z" /></svg>
 </svg>
 <svg id="mdi:backspace">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-backspace" viewBox="0 0 24 24"><path d="M22,3H7C6.31,3 5.77,3.35 5.41,3.88L0,12L5.41,20.11C5.77,20.64 6.31,21 7,21H22A2,2 0 0,0 24,19V5A2,2 0 0,0 22,3M19,15.59L17.59,17L14,13.41L10.41,17L9,15.59L12.59,12L9,8.41L10.41,7L14,10.59L17.59,7L19,8.41L15.41,12" /></svg>
@@ -47,6 +53,9 @@
 </svg>
 <svg id="mdi:brightness-auto">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-brightness-auto" viewBox="0 0 24 24"><path d="M14.3,16L13.6,14H10.4L9.7,16H7.8L11,7H13L16.2,16H14.3M20,8.69V4H15.31L12,0.69L8.69,4H4V8.69L0.69,12L4,15.31V20H8.69L12,23.31L15.31,20H20V15.31L23.31,12L20,8.69M10.85,12.65H13.15L12,9L10.85,12.65Z" /></svg>
+</svg>
+<svg id="mdi:button-pointer">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-button-pointer" viewBox="0 0 24 24"><path d="M20 20.5C20 21.3 19.3 22 18.5 22H13C12.6 22 12.3 21.9 12 21.6L8 17.4L8.7 16.6C8.9 16.4 9.2 16.3 9.5 16.3H9.7L12 18V9C12 8.4 12.4 8 13 8S14 8.4 14 9V13.5L15.2 13.6L19.1 15.8C19.6 16 20 16.6 20 17.1V20.5M20 2H4C2.9 2 2 2.9 2 4V12C2 13.1 2.9 14 4 14H8V12H4V4H20V12H18V14H20C21.1 14 22 13.1 22 12V4C22 2.9 21.1 2 20 2Z" /></svg>
 </svg>
 <svg id="mdi:calculator">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-calculator" viewBox="0 0 24 24"><path d="M7,2H17A2,2 0 0,1 19,4V20A2,2 0 0,1 17,22H7A2,2 0 0,1 5,20V4A2,2 0 0,1 7,2M7,4V8H17V4H7M7,10V12H9V10H7M11,10V12H13V10H11M15,10V12H17V10H15M7,14V16H9V14H7M11,14V16H13V14H11M15,14V16H17V14H15M7,18V20H9V18H7M11,18V20H13V18H11M15,18V20H17V18H15Z" /></svg>
@@ -102,8 +111,17 @@
 <svg id="mdi:lock-outline">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-lock-outline" viewBox="0 0 24 24"><path d="M12,17C10.89,17 10,16.1 10,15C10,13.89 10.89,13 12,13A2,2 0 0,1 14,15A2,2 0 0,1 12,17M18,20V10H6V20H18M18,8A2,2 0 0,1 20,10V20A2,2 0 0,1 18,22H6C4.89,22 4,21.1 4,20V10C4,8.89 4.89,8 6,8H7V6A5,5 0 0,1 12,1A5,5 0 0,1 17,6V8H18M12,3A3,3 0 0,0 9,6V8H15V6A3,3 0 0,0 12,3Z" /></svg>
 </svg>
+<svg id="mdi:lock-percent-outline">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-lock-percent-outline" viewBox="0 0 24 24"><path d="M18 8H17V6C17 3.2 14.8 1 12 1S7 3.2 7 6V8H6C4.9 8 4 8.9 4 10V20C4 21.1 4.9 22 6 22H18C19.1 22 20 21.1 20 20V10C20 8.9 19.1 8 18 8M9 6C9 4.3 10.3 3 12 3S15 4.3 15 6V8H9V6M18 20H6V10H18V20M11 12.5C11 13.3 10.3 14 9.5 14S8 13.3 8 12.5 8.7 11 9.5 11 11 11.7 11 12.5M16 17.5C16 18.3 15.3 19 14.5 19S13 18.3 13 17.5 13.7 16 14.5 16 16 16.7 16 17.5M16.2 12.2L9.1 19.3L7.7 17.9L14.8 10.8L16.2 12.2Z" /></svg>
+</svg>
 <svg id="mdi:logout">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-logout" viewBox="0 0 24 24"><path d="M17 7L15.59 8.41L18.17 11H8V13H18.17L15.59 15.58L17 17L22 12M4 5H12V3H4C2.9 3 2 3.9 2 5V19C2 20.1 2.9 21 4 21H12V19H4V5Z" /></svg>
+</svg>
+<svg id="mdi:menu">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-menu" viewBox="0 0 24 24"><path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" /></svg>
+</svg>
+<svg id="mdi:menu-left-outline">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-menu-left-outline" viewBox="0 0 24 24"><path d="M15,18H13.5L7.5,12L13.5,6H15V18M10.33,12L13,14.67V9.33L10.33,12Z" /></svg>
 </svg>
 <svg id="mdi:message-text-outline">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-message-text-outline" viewBox="0 0 24 24"><path d="M20,2A2,2 0 0,1 22,4V16A2,2 0 0,1 20,18H6L2,22V4C2,2.89 2.9,2 4,2H20M4,4V17.17L5.17,16H20V4H4M6,7H18V9H6V7M6,11H15V13H6V11Z" /></svg>
@@ -125,9 +143,6 @@
 </svg>
 <svg id="mdi:redo">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-redo" viewBox="0 0 24 24"><path d="M18.4,10.6C16.55,9 14.15,8 11.5,8C6.85,8 2.92,11.03 1.54,15.22L3.9,16C4.95,12.81 7.95,10.5 11.5,10.5C13.45,10.5 15.23,11.22 16.62,12.38L13,16H22V7L18.4,10.6Z" /></svg>
-</svg>
-<svg id="mdi:select-all">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-select-all" viewBox="0 0 24 24"><path d="M9,9H15V15H9M7,17H17V7H7M15,5H17V3H15M15,21H17V19H15M19,17H21V15H19M19,9H21V7H19M19,21A2,2 0 0,0 21,19H19M19,13H21V11H19M11,21H13V19H11M9,3H7V5H9M3,17H5V15H3M5,21V19H3A2,2 0 0,0 5,21M19,3V5H21A2,2 0 0,0 19,3M13,3H11V5H13M3,9H5V7H3M7,21H9V19H7M3,13H5V11H3M3,5H5V3A2,2 0 0,0 3,5Z" /></svg>
 </svg>
 <svg id="mdi:skip-next">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-skip-next" viewBox="0 0 24 24"><path d="M16,18H18V6H16M6,18L14.5,12L6,6V18Z" /></svg>
@@ -1094,7 +1109,7 @@ path.combo {
 </g>
 <g transform="translate(1160, 70)" class="key keypos-11">
 <rect rx="6" ry="6" x="-38" y="-38" width="77" height="77" class="key"/>
-<text x="0" y="0" class="key tap">CLEAR</text>
+<use href="#mdi:menu-left-outline" xlink:href="#mdi:menu-left-outline" x="-11" y="-11" height="22" width="22.0" class="key tap glyph mdi:menu-left-outline"/>
 </g>
 <g transform="translate(40, 150)" class="key keypos-12">
 <rect rx="6" ry="6" x="-38" y="-38" width="77" height="77" class="key"/>
@@ -1142,7 +1157,7 @@ path.combo {
 </g>
 <g transform="translate(1160, 150)" class="key keypos-23">
 <rect rx="6" ry="6" x="-38" y="-38" width="77" height="77" class="key"/>
-<text x="0" y="0" class="key tap">MENU</text>
+<use href="#mdi:menu" xlink:href="#mdi:menu" x="-11" y="-11" height="22" width="22.0" class="key tap glyph mdi:menu"/>
 </g>
 <g transform="translate(40, 230)" class="key keypos-24">
 <rect rx="6" ry="6" x="-38" y="-38" width="77" height="77" class="key"/>
@@ -1190,7 +1205,7 @@ path.combo {
 </g>
 <g transform="translate(1160, 230)" class="key keypos-35">
 <rect rx="6" ry="6" x="-38" y="-38" width="77" height="77" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 83%">SELECT</tspan></text>
+<use href="#mdi:button-pointer" xlink:href="#mdi:button-pointer" x="-11" y="-11" height="22" width="22.0" class="key tap glyph mdi:button-pointer"/>
 </g>
 <g transform="translate(320, 293)" class="key keypos-36">
 <rect rx="6" ry="6" x="-38" y="-38" width="77" height="77" class="key"/>
@@ -1212,7 +1227,7 @@ path.combo {
 </g>
 <g transform="translate(792, 304) rotate(-15.0)" class="key held keypos-40">
 <rect rx="6" ry="6" x="-38" y="-38" width="77" height="77" class="key held"/>
-<text x="0" y="0" class="key held tap">APP</text>
+<use href="#mdi:application-settings-outline" xlink:href="#mdi:application-settings-outline" x="-11" y="-11" height="22" width="22.0" class="key held tap glyph mdi:application-settings-outline"/>
 </g>
 <g transform="translate(880, 293)" class="key keypos-41">
 <rect rx="6" ry="6" x="-38" y="-38" width="77" height="77" class="key"/>
@@ -1270,7 +1285,7 @@ path.combo {
 </g>
 <g transform="translate(1160, 70)" class="key keypos-11">
 <rect rx="6" ry="6" x="-38" y="-38" width="77" height="77" class="key"/>
-<text x="0" y="0" class="key tap">APP</text>
+<use href="#mdi:application-settings-outline" xlink:href="#mdi:application-settings-outline" x="-11" y="-11" height="22" width="22.0" class="key tap glyph mdi:application-settings-outline"/>
 </g>
 <g transform="translate(40, 150)" class="key keypos-12">
 <rect rx="6" ry="6" x="-38" y="-38" width="77" height="77" class="key"/>
@@ -1320,9 +1335,7 @@ path.combo {
 </g>
 <g transform="translate(1160, 150)" class="key keypos-23">
 <rect rx="6" ry="6" x="-38" y="-38" width="77" height="77" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.5em">KP</tspan><tspan x="0" dy="1.0em">NLCK</tspan>
-</text>
+<use href="#mdi:lock-percent-outline" xlink:href="#mdi:lock-percent-outline" x="-11" y="-11" height="22" width="22.0" class="key tap glyph mdi:lock-percent-outline"/>
 </g>
 <g transform="translate(40, 230)" class="key keypos-24">
 <rect rx="6" ry="6" x="-38" y="-38" width="77" height="77" class="key"/>
@@ -1332,7 +1345,9 @@ path.combo {
 </g>
 <g transform="translate(120, 230)" class="key keypos-25">
 <rect rx="6" ry="6" x="-38" y="-38" width="77" height="77" class="key"/>
-<use href="#mdi:select-all" xlink:href="#mdi:select-all" x="-11" y="-11" height="22" width="22.0" class="key tap glyph mdi:select-all"/>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.5em" style="font-size: 83%">Select</tspan><tspan x="0" dy="1.0em" style="font-size: 83%">All</tspan>
+</text>
 </g>
 <g transform="translate(200, 210)" class="key keypos-26">
 <rect rx="6" ry="6" x="-38" y="-38" width="77" height="77" class="key"/>
@@ -1376,7 +1391,7 @@ path.combo {
 </g>
 <g transform="translate(1160, 230)" class="key keypos-35">
 <rect rx="6" ry="6" x="-38" y="-38" width="77" height="77" class="key"/>
-<text x="0" y="0" class="key tap">SLCK</text>
+<use href="#mdi:arrow-vertical-lock" xlink:href="#mdi:arrow-vertical-lock" x="-11" y="-11" height="22" width="22.0" class="key tap glyph mdi:arrow-vertical-lock"/>
 </g>
 <g transform="translate(320, 293)" class="key held keypos-36">
 <rect rx="6" ry="6" x="-38" y="-38" width="77" height="77" class="key held"/>

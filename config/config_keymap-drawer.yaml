@@ -80,7 +80,7 @@ parse_config:
     DEL: $$mdi:backspace-reverse-outline$$
 
     # custom shortcuts
-    LC(A): $$mdi:select-all$$
+    LC(A): Select All
     LC(X): $$mdi:content-cut$$
     LC(C): $$mdi:content-copy$$
     LC(V): $$mdi:content-paste$$
@@ -100,6 +100,8 @@ parse_config:
     # locks
     CAPSLOCK: $$mdi:apple-keyboard-caps$$
     CAPS: $$mdi:apple-keyboard-caps$$
+    KP_NLCK: $$mdi:lock-percent-outline$$
+    SLCK: $$mdi:arrow-vertical-lock$$
 
     # system
     K_PWR: $$mdi:power-standby$$
@@ -107,6 +109,10 @@ parse_config:
     K_LOCK: $$mdi:lock-outline$$
     C_AL_LOCK: $$mdi:lock$$
     C_AL_LOGOFF: $$mdi:logout$$
+    CLEAR: $$mdi:menu-left-outline$$
+    K_MENU: $$mdi:menu$$
+    K_SELECT: $$mdi:button-pointer$$
+    K_APP: $$mdi:application-settings-outline$$
     INS: Ins
     HOME: Home
     END: End
