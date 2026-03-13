@@ -348,14 +348,14 @@
         new_line_below: new_line_below {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp END &kp ENTER>;
+            bindings = <&kp END &kp ENTER &to 0>;
             label = "NEW_LINE_BELOW";
         };
 
         new_line_above: new_line_above {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp HOME &kp ENTER &kp UP>;
+            bindings = <&kp HOME &kp ENTER &kp UP &to 0>;
             label = "NEW_LINE_ABOVE";
         };
 
