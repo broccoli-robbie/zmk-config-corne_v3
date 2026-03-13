@@ -218,14 +218,14 @@ layers:
   Vim:
   - {t: Base, h: toggle}
   - $$mdi:keyboard-esc$$
-  - Ctl+$$mdi:arrow-right-bold$$
-  - '&end_word'
+  - Next Word
+  - Word End
   - Replace
   - ''
   - Yank
   - Undo
   - Insert
-  - {t: '&new_line_below', s: '&new_line_above'}
+  - New Line
   - $$mdi:content-paste$$
   - ''
   - {t: '$$mdi:transfer$$', type: trans}
@@ -233,7 +233,7 @@ layers:
   - Substitute
   - Delete
   - ''
-  - {t: '&gg', s: Ctl+End}
+  - Vim G
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-up-bold$$
@@ -245,7 +245,7 @@ layers:
   - $$mdi:backspace-reverse-outline$$
   - Change
   - ''
-  - Ctl+$$mdi:arrow-left-bold$$
+  - Prev Word
   - ''
   - ''
   - ''

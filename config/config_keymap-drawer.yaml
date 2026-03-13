@@ -1,3 +1,211 @@
+parse_config:
+  mark_alternate_layer_activators: true
+  trans_legend:
+    tap: $$mdi:transfer$$
+    type: trans
+
+  raw_binding_map:
+    # modifiers
+    "&kp LSHFT": $$mdi:apple-keyboard-shift$$
+    "&kp LCTRL": $$mdi:apple-keyboard-control$$
+    "&kp RCTRL": $$mdi:apple-keyboard-control$$
+    "&kp LGUI": $$mdi:linux$$
+    "&kp RGUI": $$mdi:linux$$
+    "&kp LALT": $$mdi:apple-keyboard-option$$
+    "&kp RALT": $$mdi:apple-keyboard-option$$
+    "&kp RSHFT": $$mdi:apple-keyboard-shift$$
+    "&kp BSPC": $$mdi:backspace$$
+
+    # behaviors/macros
+    "&select_line": Select Line
+    "&select_word": Selext Word
+    "&extend_line": Extend Line
+    "&extend_word": Extend Word
+
+    # vim
+    "&vim_y": Yank
+    "&vim_d": Delete
+    "&vim_s": Substitute
+    "&vim_a": Append
+    "&vim_u": Undo
+    "&vim_i": Insert
+    "&vim_c": Change
+    "&vim_r": Replace
+    "&vim_o": New Line
+    "&end_word": Word End
+    "&kp LC(RIGHT)": Next Word
+    "&kp LC(LEFT)": Prev Word
+    "&vim_g": Vim G
+
+    # bluetooth
+    "&bt BT_CLR": $$mdi:bluetooth$$
+    "&bt BT_SEL 0": BT 1
+    "&bt BT_SEL 1": BT 2
+    "&bt BT_SEL 2": BT 3
+    "&bt BT_SEL 3": BT 4
+    "&bt BT_SEL 4": BT 5
+
+  zmk_keycode_map:
+    # modifiers
+    LCTRL: $$mdi:apple-keyboard-control$$
+    RCTRL: $$mdi:apple-keyboard-control$$
+    LALT: $$mdi:apple-keyboard-option$$
+    RALT: $$mdi:apple-keyboard-option$$
+    LGUI: $$mdi:linux$$
+    RGUI: $$mdi:linux$$
+    LSHFT: $$mdi:apple-keyboard-shift$$
+    LSHIFT: $$mdi:apple-keyboard-shift$$
+    RSHFT: $$mdi:apple-keyboard-shift$$
+    RSHIFT: $$mdi:apple-keyboard-shift$$
+    LS(LC(LALT)): $$mdi:triangle$$ # Meh
+
+    # whitespace
+    ESC: $$mdi:keyboard-esc$$
+    SPACE: $$mdi:keyboard-space$$
+    BACKSPACE:
+      type: backspace
+      tap: $$mdi:backspace$$
+    BSPC:
+      type: backspace
+      tap: $$mdi:backspace$$
+    ENTER:
+      type: enter
+      tap: $$mdi:keyboard-return$$
+    RET:
+      type: enter
+      tap: $$mdi:keyboard-return$$
+    TAB: $$mdi:keyboard-tab$$
+    LS(TAB): $$mdi:keyboard-tab-reverse$$
+    DELETE: $$mdi:backspace-reverse-outline$$
+    DEL: $$mdi:backspace-reverse-outline$$
+
+    # custom shortcuts
+    LC(A): $$mdi:select-all$$
+    LC(X): $$mdi:content-cut$$
+    LC(C): $$mdi:content-copy$$
+    LC(V): $$mdi:content-paste$$
+    LC(Y): $$mdi:redo$$
+    LC(Z): $$mdi:undo$$
+    LS(LG(S)): $$mdi:monitor-screenshot$$
+    K_FIND: $$mdi:find-replace$$
+
+    # arrows
+    UP: $$mdi:arrow-up-bold$$
+    DOWN: $$mdi:arrow-down-bold$$
+    LEFT: $$mdi:arrow-left-bold$$
+    RIGHT: $$mdi:arrow-right-bold$$
+    PG_UP: $$mdi:transfer-up$$
+    PG_DN: $$mdi:transfer-down$$
+
+    # locks
+    CAPSLOCK: $$mdi:apple-keyboard-caps$$
+    CAPS: $$mdi:apple-keyboard-caps$$
+
+    # system
+    K_PWR: $$mdi:power-standby$$
+    K_SLEEP: $$mdi:power-sleep$$
+    K_LOCK: $$mdi:lock-outline$$
+    C_AL_LOCK: $$mdi:lock$$
+    C_AL_LOGOFF: $$mdi:logout$$
+    INS: Ins
+    HOME: Home
+    END: End
+    PSCRN: $$mdi:printer-outline$$
+    PAUSE_BREAK: $$mdi:format-page-break$$
+
+    # brightness
+    C_BRI_MIN: $$mdi:brightness-1$$
+    C_BRI_DN: $$mdi:brightness-4$$
+    C_BRI_UP: $$mdi:brightness-6$$
+    C_BRI_MAX: $$mdi:brightness-7$$
+    C_BRI_AUTO: $$mdi:brightness-auto$$
+
+    # apps
+    K_CALCULATOR: $$mdi:calculator$$
+    C_AL_EMAIL: $$mdi:email-outline$$
+    C_AL_FILES: $$mdi:folder-multiple-outline$$
+    C_AL_CAL: $$mdi:calendar-month$$
+    C_AL_WORD: $$mdi:file-word-outline$$
+    C_AL_TEXT_EDITOR: $$mdi:text-box-edit-outline$$
+    C_AL_SHEET: $$mdi:file-excel-outline$$
+    C_AL_IM: $$mdi:message-text-outline$$
+    C_AL_VOICEMAIL: $$mdi:voicemail$$
+
+    # media
+    K_PP: $$mdi:play-pause$$
+    K_NEXT: $$mdi:skip-next$$
+    K_PREV: $$mdi:skip-previous$$
+    K_STOP: $$mdi:stop$$
+    K_VOL_UP: $$mdi:volume-plus$$
+    K_VOL_DN: $$mdi:volume-minus$$
+    K_MUTE: $$mdi:volume-mute$$
+
+    # defaults
+    AMPERSAND: "&"
+    AMPS: "&"
+    APOS: "'"
+    APOSTROPHE: "'"
+    ASTERISK: "*"
+    ASTRK: "*"
+    AT: "@"
+    AT_SIGN: "@"
+    BACKSLASH: \
+    BSLH: \
+    CARET: ^
+    COLON: ":"
+    COMMA: ","
+    DLLR: $
+    DOLLAR: $
+    DOT: .
+    DOUBLE_QUOTES: '"'
+    DQT: '"'
+    EQUAL: "="
+    EXCL: "!"
+    EXCLAMATION: "!"
+    FSLH: /
+    GRAVE: "`"
+    GREATER_THAN: ">"
+    GT: ">"
+    HASH: "#"
+    LBKT: "["
+    LBRC: "{"
+    LEFT_BRACE: "{"
+    LEFT_BRACKET: "["
+    LEFT_PARENTHESIS: (
+    LESS_THAN: <
+    LPAR: (
+    LT: <
+    MINUS: "-"
+    NON_US_BACKSLASH: \
+    NON_US_BSLH: "|"
+    NON_US_HASH: "#"
+    NUHS: "#"
+    PERCENT: "%"
+    PERIOD: .
+    PIPE: "|"
+    PIPE2: "|"
+    PLUS: +
+    POUND: "#"
+    PRCNT: "%"
+    QMARK: "?"
+    QUESTION: "?"
+    RBKT: "]"
+    RBRC: "}"
+    RIGHT_BRACE: "}"
+    RIGHT_BRACKET: "]"
+    RIGHT_PARENTHESIS: )
+    RPAR: )
+    SEMI: ;
+    SEMICOLON: ;
+    SINGLE_QUOTE: "'"
+    SLASH: /
+    SQT: "'"
+    STAR: "*"
+    TILDE: "~"
+    TILDE2: "~"
+    UNDER: _
+    UNDERSCORE: _
+
 draw_config:
   # key dimensions
   key_w: 100
@@ -28,16 +236,24 @@ draw_config:
   # gap between ortho halves
   split_gap: 20
 
-  append_colon_to_layer_header: false
-
   # shrink legend font sizes wider than this many chars
   shrink_wide_legends: 5
 
-  # glyph dimensions
+  # glyphs
   glyph_tap_size: 22
   glyph_hold_size: 16
   glyph_shifted_size: 16
-
+  glyphs: {}
+  glyph_urls:
+    tabler: https://unpkg.com/@tabler/icons/icons/outline/{}.svg
+    tablerf: https://unpkg.com/@tabler/icons/icons/filled/{}.svg
+    mdi: https://raw.githubusercontent.com/Templarian/MaterialDesign-SVG/master/svg/{}.svg
+    mdil: https://raw.githubusercontent.com/Pictogrammers/MaterialDesignLight/master/svg/{}.svg
+    material: https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/{}/default/48px.svg
+  
+  use_local_cache: true
+  append_colon_to_layer_header: false
+  
   # CSS styling
   svg_extra_style: |
     svg path {
@@ -424,215 +640,3 @@ draw_config:
     .key .mdi\:toggle-switch ~ .mdi\:bluetooth {
       translate: 22px -26px;
     }
-
-  glyphs: {}
-  glyph_urls:
-    tabler: https://unpkg.com/@tabler/icons/icons/outline/{}.svg
-    tablerf: https://unpkg.com/@tabler/icons/icons/filled/{}.svg
-    mdi: https://raw.githubusercontent.com/Templarian/MaterialDesign-SVG/master/svg/{}.svg
-    mdil: https://raw.githubusercontent.com/Pictogrammers/MaterialDesignLight/master/svg/{}.svg
-    material: https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/{}/default/48px.svg
-  use_local_cache: true
-
-parse_config:
-  mark_alternate_layer_activators: true
-  trans_legend:
-    tap: $$mdi:transfer$$
-    type: trans
-
-  raw_binding_map:
-    # bluetooth
-    "&bt BT_CLR": $$mdi:bluetooth$$
-    "&bt BT_SEL 0": BT 1
-    "&bt BT_SEL 1": BT 2
-    "&bt BT_SEL 2": BT 3
-    "&bt BT_SEL 3": BT 4
-    "&bt BT_SEL 4": BT 5
-
-    # modifiers
-    "&kp LSHFT": $$mdi:apple-keyboard-shift$$
-    "&kp LCTRL": $$mdi:apple-keyboard-control$$
-    "&kp RCTRL": $$mdi:apple-keyboard-control$$
-    "&kp LGUI": $$mdi:linux$$
-    "&kp RGUI": $$mdi:linux$$
-    "&kp LALT": $$mdi:apple-keyboard-option$$
-    "&kp RALT": $$mdi:apple-keyboard-option$$
-    "&kp RSHFT": $$mdi:apple-keyboard-shift$$
-    "&kp BSPC": $$mdi:backspace$$
-
-    # cursor
-    "&select_line": Select Line
-    "&select_word": Selext Word
-    "&extend_line": Extend Line
-    "&extend_word": Extend Word
-
-    # vim
-    "&vim_y": Yank
-    "&vim_d": Delete
-    "&vim_s": Substitute
-    "&vim_a": Append
-    "&vim_u": Undo
-    "&vim_i": Insert
-    "&vim_c": Change
-    "&vim_r": Replace
-
-  zmk_keycode_map:
-    # modifiers
-    LCTRL: $$mdi:apple-keyboard-control$$
-    RCTRL: $$mdi:apple-keyboard-control$$
-    LALT: $$mdi:apple-keyboard-option$$
-    RALT: $$mdi:apple-keyboard-option$$
-    LGUI: $$mdi:linux$$
-    RGUI: $$mdi:linux$$
-    LSHFT: $$mdi:apple-keyboard-shift$$
-    LSHIFT: $$mdi:apple-keyboard-shift$$
-    RSHFT: $$mdi:apple-keyboard-shift$$
-    RSHIFT: $$mdi:apple-keyboard-shift$$
-    LS(LC(LALT)): $$mdi:triangle$$ # Meh
-
-    # whitespace
-    ESC: $$mdi:keyboard-esc$$
-    SPACE: $$mdi:keyboard-space$$
-    BACKSPACE:
-      type: backspace
-      tap: $$mdi:backspace$$
-    BSPC:
-      type: backspace
-      tap: $$mdi:backspace$$
-    ENTER:
-      type: enter
-      tap: $$mdi:keyboard-return$$
-    RET:
-      type: enter
-      tap: $$mdi:keyboard-return$$
-    TAB: $$mdi:keyboard-tab$$
-    LS(TAB): $$mdi:keyboard-tab-reverse$$
-    DELETE: $$mdi:backspace-reverse-outline$$
-    DEL: $$mdi:backspace-reverse-outline$$
-
-    # custom
-    LC(A): $$mdi:select-all$$
-    LC(X): $$mdi:content-cut$$
-    LC(C): $$mdi:content-copy$$
-    LC(V): $$mdi:content-paste$$
-    LC(Y): $$mdi:redo$$
-    LC(Z): $$mdi:undo$$
-    LS(LG(S)): $$mdi:monitor-screenshot$$
-    K_FIND: $$mdi:find-replace$$
-
-    # arrows
-    UP: $$mdi:arrow-up-bold$$
-    DOWN: $$mdi:arrow-down-bold$$
-    LEFT: $$mdi:arrow-left-bold$$
-    RIGHT: $$mdi:arrow-right-bold$$
-    PG_UP: $$mdi:transfer-up$$
-    PG_DN: $$mdi:transfer-down$$
-
-    # locks
-    CAPSLOCK: $$mdi:apple-keyboard-caps$$
-    CAPS: $$mdi:apple-keyboard-caps$$
-
-    # system
-    K_PWR: $$mdi:power-standby$$
-    K_SLEEP: $$mdi:power-sleep$$
-    K_LOCK: $$mdi:lock-outline$$
-    C_AL_LOCK: $$mdi:lock$$
-    C_AL_LOGOFF: $$mdi:logout$$
-    INS: Ins
-    HOME: Home
-    END: End
-    PSCRN: $$mdi:printer-outline$$
-    PAUSE_BREAK: $$mdi:format-page-break$$
-
-    # brightness
-    C_BRI_MIN: $$mdi:brightness-1$$
-    C_BRI_DN: $$mdi:brightness-4$$
-    C_BRI_UP: $$mdi:brightness-6$$
-    C_BRI_MAX: $$mdi:brightness-7$$
-    C_BRI_AUTO: $$mdi:brightness-auto$$
-
-    # apps
-    K_CALCULATOR: $$mdi:calculator$$
-    C_AL_EMAIL: $$mdi:email-outline$$
-    C_AL_FILES: $$mdi:folder-multiple-outline$$
-    C_AL_CAL: $$mdi:calendar-month$$
-    C_AL_WORD: $$mdi:file-word-outline$$
-    C_AL_TEXT_EDITOR: $$mdi:text-box-edit-outline$$
-    C_AL_SHEET: $$mdi:file-excel-outline$$
-    C_AL_IM: $$mdi:message-text-outline$$
-    C_AL_VOICEMAIL: $$mdi:voicemail$$
-
-    # media
-    K_PP: $$mdi:play-pause$$
-    K_NEXT: $$mdi:skip-next$$
-    K_PREV: $$mdi:skip-previous$$
-    K_STOP: $$mdi:stop$$
-    K_VOL_UP: $$mdi:volume-plus$$
-    K_VOL_DN: $$mdi:volume-minus$$
-    K_MUTE: $$mdi:volume-mute$$
-
-    # defaults
-    AMPERSAND: "&"
-    AMPS: "&"
-    APOS: "'"
-    APOSTROPHE: "'"
-    ASTERISK: "*"
-    ASTRK: "*"
-    AT: "@"
-    AT_SIGN: "@"
-    BACKSLASH: \
-    BSLH: \
-    CARET: ^
-    COLON: ":"
-    COMMA: ","
-    DLLR: $
-    DOLLAR: $
-    DOT: .
-    DOUBLE_QUOTES: '"'
-    DQT: '"'
-    EQUAL: "="
-    EXCL: "!"
-    EXCLAMATION: "!"
-    FSLH: /
-    GRAVE: "`"
-    GREATER_THAN: ">"
-    GT: ">"
-    HASH: "#"
-    LBKT: "["
-    LBRC: "{"
-    LEFT_BRACE: "{"
-    LEFT_BRACKET: "["
-    LEFT_PARENTHESIS: (
-    LESS_THAN: <
-    LPAR: (
-    LT: <
-    MINUS: "-"
-    NON_US_BACKSLASH: \
-    NON_US_BSLH: "|"
-    NON_US_HASH: "#"
-    NUHS: "#"
-    PERCENT: "%"
-    PERIOD: .
-    PIPE: "|"
-    PIPE2: "|"
-    PLUS: +
-    POUND: "#"
-    PRCNT: "%"
-    QMARK: "?"
-    QUESTION: "?"
-    RBKT: "]"
-    RBRC: "}"
-    RIGHT_BRACE: "}"
-    RIGHT_BRACKET: "]"
-    RIGHT_PARENTHESIS: )
-    RPAR: )
-    SEMI: ;
-    SEMICOLON: ;
-    SINGLE_QUOTE: "'"
-    SLASH: /
-    SQT: "'"
-    STAR: "*"
-    TILDE: "~"
-    TILDE2: "~"
-    UNDER: _
-    UNDERSCORE: _
