@@ -233,7 +233,7 @@ layers:
   - Substitute
   - Delete
   - ''
-  - Vim G
+  - Move Screen
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-up-bold$$

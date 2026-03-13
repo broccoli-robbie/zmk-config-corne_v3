@@ -35,7 +35,7 @@ parse_config:
     "&end_word": Word End
     "&kp LC(RIGHT)": Next Word
     "&kp LC(LEFT)": Prev Word
-    "&vim_g": Vim G
+    "&vim_g": Move Screen
 
     # bluetooth
     "&bt BT_CLR": $$mdi:bluetooth$$
