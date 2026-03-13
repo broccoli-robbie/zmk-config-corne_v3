@@ -1,7 +1,7 @@
 parse_config:
   mark_alternate_layer_activators: true
   trans_legend:
-    tap: $$mdi:transfer$$
+    tap: $$mdi:menu-down-outline$$
     type: trans
 
   raw_binding_map:
